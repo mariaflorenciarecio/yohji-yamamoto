@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mariaflorenciarecio/yohji-yamamoto/static/css/main.2050b240.css",
-    "main.js": "/mariaflorenciarecio/yohji-yamamoto/static/js/main.2937b1b6.js",
-    "static/js/787.a40a368c.chunk.js": "/mariaflorenciarecio/yohji-yamamoto/static/js/787.a40a368c.chunk.js",
-    "static/media/logo.png": "/mariaflorenciarecio/yohji-yamamoto/static/media/logo.b29a63e1e7e79fd2e992.png",
-    "index.html": "/mariaflorenciarecio/yohji-yamamoto/index.html",
-    "main.2050b240.css.map": "/mariaflorenciarecio/yohji-yamamoto/static/css/main.2050b240.css.map",
-    "main.2937b1b6.js.map": "/mariaflorenciarecio/yohji-yamamoto/static/js/main.2937b1b6.js.map",
-    "787.a40a368c.chunk.js.map": "/mariaflorenciarecio/yohji-yamamoto/static/js/787.a40a368c.chunk.js.map"
+    "main.css": "/yohji-yamamoto/static/css/main.2050b240.css",
+    "main.js": "/yohji-yamamoto/static/js/main.59e75336.js",
+    "static/js/787.a40a368c.chunk.js": "/yohji-yamamoto/static/js/787.a40a368c.chunk.js",
+    "static/media/logo.png": "/yohji-yamamoto/static/media/logo.b29a63e1e7e79fd2e992.png",
+    "index.html": "/yohji-yamamoto/index.html",
+    "main.2050b240.css.map": "/yohji-yamamoto/static/css/main.2050b240.css.map",
+    "main.59e75336.js.map": "/yohji-yamamoto/static/js/main.59e75336.js.map",
+    "787.a40a368c.chunk.js.map": "/yohji-yamamoto/static/js/787.a40a368c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2050b240.css",
-    "static/js/main.2937b1b6.js"
+    "static/js/main.59e75336.js"
   ]
 }
