@@ -93,10 +93,10 @@ const NavBar = () => {
                         <div className="relative max-w-xs w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto">
 
                             {/* Botón para cerrar el menú */}
-                            <div className="px-6 pt-6 pb-4 flex">
+                            <div className="px-6 pt-6 flex bg-black">
                                 <button
                                     type="button"
-                                    className="-m-2 p-2 inline-flex text-black"
+                                    className="-m-2 p-2 inline-flex text-white"
                                     onClick={() => setOpen(false)}
                                 >
                                     <span className="sr-only">Cerrar menú</span>
@@ -105,11 +105,11 @@ const NavBar = () => {
                             </div>
 
                             {/* Enlaces */}
-                            <Tab.Group as="div" className="mt-2">
+                            <Tab.Group as="div">
 
                                 {/* Iniciar sesión / Crear cuenta */}
-                                <div className="flow-root border-y border-black">
-                                    <a href="#" className="pl-7 py-3 block font-medium text-black">
+                                <div className="flow-root bg-black">
+                                    <a href="#" className="pl-7 py-6 block font-light text-white">
                                         Iniciar sesión / Crear cuenta
                                     </a>
                                 </div>
@@ -122,7 +122,7 @@ const NavBar = () => {
                                             className={({ selected }) =>
                                                 classNames(
                                                     selected ? 'text-black border-black' : 'text-black border-transparent',
-                                                    'flex-1 pb-3 pt-6 border-b-2 font-medium text-xs'
+                                                    'flex-1 pb-6 pt-6 border-b-2 font-medium text-xs'
                                                 )
                                             }
                                         >
@@ -134,7 +134,7 @@ const NavBar = () => {
                                 {/* Secciones */}
                                 <Tab.Panels as={Fragment}>
                                     {navigation.categories.map((category) => (
-                                        <Tab.Panel key={category.name} className="px-6 py-6 px-4 space-y-10">
+                                        <Tab.Panel key={category.name} className="px-6 py-6 space-y-10">
                                             {category.sections.map((section) => (
                                                 <div key={section.name}>
                                                     <p id={`${category.id}-${section.id}-heading-mobile`} className="font-medium text-black uppercase">
@@ -143,7 +143,7 @@ const NavBar = () => {
                                                     <ul
                                                         role="list"
                                                         aria-labelledby={`${category.id}-${section.id}-heading-mobile`}
-                                                        className="mt-6 flex flex-col space-y-6"
+                                                        className="grid grid-cols-2 space-y-6 items-baseline"
                                                     >
                                                         {section.items.map((item) => (
                                                             <li key={item.name} className="flow-root">
