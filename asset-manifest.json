@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/yohji-yamamoto/static/css/main.dafbe7da.css",
-    "main.js": "/yohji-yamamoto/static/js/main.0506e2fb.js",
+    "main.css": "/yohji-yamamoto/static/css/main.139a330b.css",
+    "main.js": "/yohji-yamamoto/static/js/main.c0b611e8.js",
     "static/js/787.a40a368c.chunk.js": "/yohji-yamamoto/static/js/787.a40a368c.chunk.js",
     "static/media/logo.png": "/yohji-yamamoto/static/media/logo.b29a63e1e7e79fd2e992.png",
     "index.html": "/yohji-yamamoto/index.html",
-    "main.dafbe7da.css.map": "/yohji-yamamoto/static/css/main.dafbe7da.css.map",
-    "main.0506e2fb.js.map": "/yohji-yamamoto/static/js/main.0506e2fb.js.map",
+    "main.139a330b.css.map": "/yohji-yamamoto/static/css/main.139a330b.css.map",
+    "main.c0b611e8.js.map": "/yohji-yamamoto/static/js/main.c0b611e8.js.map",
     "787.a40a368c.chunk.js.map": "/yohji-yamamoto/static/js/787.a40a368c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dafbe7da.css",
-    "static/js/main.0506e2fb.js"
+    "static/css/main.139a330b.css",
+    "static/js/main.c0b611e8.js"
   ]
 }
