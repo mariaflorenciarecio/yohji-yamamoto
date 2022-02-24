@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
-import { ArrowNarrowRightIcon, MenuIcon, UserCircleIcon, XIcon } from '@heroicons/react/solid'
+import { MenuIcon, UserCircleIcon, XIcon } from '@heroicons/react/solid'
 import logo from '../assets/logo.png'
 import WishlistWidget from './WishlistWidget'
 import CartWidget from './CartWidget'
@@ -40,11 +40,10 @@ const navigation = {
                     name: 'Bolsos',
                     items: [
                         { name: 'Backpack', href: '#' },
-                        { name: 'Clutches', href: '#' },
-                        { name: 'Shoulder', href: '#' },
+                        { name: 'Clutch', href: '#' },
                         { name: 'Crossbody', href: '#' },
                         { name: 'Mini', href: '#' },
-                        { name: 'Totes', href: '#' },
+                        { name: 'Tote', href: '#' },
                     ],
                 },
             ],
@@ -185,7 +184,7 @@ const NavBar = () => {
                     </button>
 
                     {/* Container de submenú */}
-                    <Popover.Group className="hidden lg:block">
+                    <Popover.Group className="hidden lg:block z-10">
                         <div className="h-full flex space-x-8">
                             {navigation.categories.map((category) => (
                                 <Popover key={category.name} className="flex">
@@ -197,7 +196,7 @@ const NavBar = () => {
                                                     open
                                                         ? 'border-black text-black'
                                                         : 'border-transparent text-black',
-                                                    'relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 mb-px pt-px'
+                                                    'relative flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 mb-px pt-px'
                                                 )}
                                             >
                                                 {category.name}
@@ -217,8 +216,8 @@ const NavBar = () => {
                                                     <div className="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true" />
                                                     <div className="relative bg-white">
                                                         {category.sections.map((section) => (
-                                                            <div key={section.name} className="flex flex-col justify-center px-6">
-                                                                <p id={`${section.name}-heading`} className="font-medium uppercase">
+                                                            <div key={section.name} className="flex flex-col px-6">
+                                                                <p id={`${section.name}-heading`} className="font-medium self-center uppercase">
                                                                     {section.name}
                                                                 </p>
                                                                 <ul

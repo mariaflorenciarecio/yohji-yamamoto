@@ -1,4 +1,3 @@
-import React from 'react'
 import { ShoppingBagIcon } from '@heroicons/react/solid'
 
 const CartWidget = () => {
