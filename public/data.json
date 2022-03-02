@@ -1,0 +1,1944 @@
+[
+    {
+        "id": 3,
+        "name": "Parka de smoking",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Abrigos",
+        "price": 2156,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/35/27/53/17352753_36031441_1000.jpg",
+        "imageAlt": "Parka de smoking",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 4},
+            {"size": "L", "stock": 3},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 2},
+            {"size": "XXXL", "stock": 1}
+        ],
+        "details": {
+            "description": "Diseño con capucha, diseño drapeado, manga larga, puños elásticos, botón de presión y cierre en la parte delantera, dos bolsillos laterales con solapa y ribete con cordón.",
+            "composition": "Lana 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela pesada."
+        },
+        "model": { 
+            "height": "1.77 m", 
+            "bust": "86 cm", 
+            "hips": "89 cm", 
+            "waist": "61 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 4,
+        "name": "Abrigo estampado con botones",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Abrigos",
+        "price": 2413,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/15/48/49/31/15484931_29315434_1000.jpg",
+        "imageAlt": "Abrigo estampado con botones",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 4},
+            {"size": "M", "stock": 1},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 1},
+            {"size": "XXL", "stock": 3},
+            {"size": "XXXL", "stock": 1}
+        ],
+        "details": {
+            "description": "Solapa de muesca, manga larga, cierre con botones en la parte delantera y bolsillos laterales con solapa.",
+            "composition": "Lana 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.78 m", 
+            "bust": "80 cm", 
+            "hips": "88 cm", 
+            "waist": "60 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 5,
+        "name": "Blazer con paneles",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Blazers",
+        "price": 1582,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/32/09/94/17320994_35842374_1000.jpg",
+        "imageAlt": "Blazer con paneles",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 4},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 1},
+            {"size": "XXXL", "stock": 3}
+        ],
+        "details": {
+            "description": "Solapas de pico anchas, detalles de capas, cierre con botones en la parte delantera, manga raglán larga, dos bolsillos en la parte delantera y abertura central en la parte posterior.",
+            "composition": "Lana 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.79 m", 
+            "bust": "82 cm", 
+            "hips": "90 cm", 
+            "waist": "61 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 6,
+        "name": "Blazer con botones",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Blazers",
+        "price": 1770,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/60/77/59/17607759_36800318_1000.jpg",
+        "imageAlt": "Blazer con botones",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 2},
+            {"size": "M", "stock": 5},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 1},
+            {"size": "XXL", "stock": 4},
+            {"size": "XXXL", "stock": 3}
+        ],
+        "details": {
+            "description": "Diseño a paneles, cierre con botones en la parte delantera, corte de vestir y manga larga.",
+            "composition": "Algodón 100%, Nylon 100%",
+            "care": "No lavar ni secar.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado, pero es ajustado en la cintura.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.75 m", 
+            "bust": "80 cm", 
+            "hips": "89 cm", 
+            "waist": "61 cm", 
+            "size": "L" 
+        }
+    },
+    {
+        "id": 8,
+        "name": "Blazer corto",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Blazers",
+        "price": 1184,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/84/50/85/16845085_33953976_1000.jpg",
+        "imageAlt": "Blazer corto",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 2},
+            {"size": "M", "stock": 3},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 1},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Manga larga y dobladillo asimétrico.",
+            "composition": "Lana 100%",
+            "care": "Limpieza especializada.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.76 m", 
+            "bust": "82 cm", 
+            "hips": "89 cm", 
+            "waist": "60 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 9,
+        "name": "Camisa con detalle de lazo",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Camisas",
+        "price": 685,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/34/38/32/17343832_36104311_1000.jpg",
+        "imageAlt": "Camisa con detalle de lazo",
+        "color": "Blanco",
+        "sizes": [
+            {"size": "S", "stock": 1},
+            {"size": "M", "stock": 4},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 2},
+            {"size": "XXL", "stock": 3},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Cuello recto de pico, cierre con botones en la parte delantera, manga larga, puños con botón y dobladillo recto.",
+            "composition": "Algodón 100%",
+            "care": "Lavar en lavadora.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.78 m", 
+            "bust": "83 cm", 
+            "hips": "90 cm", 
+            "waist": "66 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 11,
+        "name": "Camisa larga con cierre descentralizado",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Camisas",
+        "price": 1028,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/60/77/87/17607787_36798829_1000.jpg",
+        "imageAlt": "Camisa larga con cierre descentralizado",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 1},
+            {"size": "XXL", "stock": 3},
+            {"size": "XXXL", "stock": 4}
+        ],
+        "details": {
+            "description": "Cuello clásico, cierre descentrado con botones en la parte delantera, manga larga, puños con botón y dobladillo curvo.",
+            "composition": "Algodón 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.75 m", 
+            "bust": "80 cm", 
+            "hips": "89 cm", 
+            "waist": "61 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 12,
+        "name": "Camisa con dobladillo asimétrico",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Camisas",
+        "price": 1211,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/77/08/77/17770877_37501061_1000.jpg",
+        "imageAlt": "Camisa con dobladillo asimétrico",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 2},
+            {"size": "M", "stock": 0},
+            {"size": "L", "stock": 4},
+            {"size": "XL", "stock": 3},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Cuello recto de pico, cierre con botones en la parte delantera, manga larga y dobladillo asimétrico.",
+            "composition": "Rayón 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.78 m", 
+            "bust": "81 cm", 
+            "hips": "91 cm", 
+            "waist": "60 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 13,
+        "name": "Camisa drapeada con corsé",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Camisas",
+        "price": 2031,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/89/97/82/16899782_35295126_1000.jpg",
+        "imageAlt": "Camisa drapeada con corsé",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 1},
+            {"size": "XXL", "stock": 3},
+            {"size": "XXXL", "stock": 2}
+        ],
+        "details": {
+            "description": "Cuello clásico, cierre con botones en la parte delantera, manga larga, detalle drapeado y cierre con lazo en la parte delantera.",
+            "composition": "Celuloide 100%",
+            "care": "Lavar en lavadora.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado y viene con un fondo.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.76 m", 
+            "bust": "82 cm", 
+            "hips": "89 cm", 
+            "waist": "60 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 14,
+        "name": "Camisa larga con espada acampanada",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Camisas",
+        "price": 587,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/15/27/02/39/15270239_26641944_1000.jpg",
+        "imageAlt": "Camisa larga con espada acampanada",
+        "color": "Blanco",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 0},
+            {"size": "L", "stock": 2},
+            {"size": "XL", "stock": 4},
+            {"size": "XXL", "stock": 1},
+            {"size": "XXXL", "stock": 3}
+        ],
+        "details": {
+            "description": "Camisa larga con espalda acampanada en algodón de color blanco con corte largo, estilo acampanado, cuello de pico, manga larga, puños con botón y cierre con botones ocultos.",
+            "composition": "Algodón 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela ligera."
+        },
+        "model": { 
+            "height": "1.75 m", 
+            "bust": "80 cm", 
+            "hips": "89 cm", 
+            "waist": "61 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 15,
+        "name": "Camisa asimétrica a capas",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Camisas",
+        "price": 1102,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/89/97/80/16899780_35295119_1000.jpg",
+        "imageAlt": "Camisa asimétrica a capas",
+        "color": "Blanco",
+        "sizes": [
+            {"size": "S", "stock": 4},
+            {"size": "M", "stock": 0},
+            {"size": "L", "stock": 1},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 2}
+        ],
+        "details": {
+            "description": "Diseño a capas, detalle drapeado, cuello clásico, cierre con botones en la parte delantera, cierre con agujetas en la parte delantera, manga larga, puños con botón y dobladillo asimétrico.",
+            "composition": "Algodón 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.76 m", 
+            "bust": "82 cm", 
+            "hips": "89 cm", 
+            "waist": "60 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 16,
+        "name": "Camisa oversize manga larga",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Camisas",
+        "price": 580,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/15/27/02/34/15270234_26809566_1000.jpg",
+        "imageAlt": "Camisa oversize manga larga",
+        "color": "Blanco",
+        "sizes": [
+            {"size": "S", "stock": 2},
+            {"size": "M", "stock": 0},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 4},
+            {"size": "XXXL", "stock": 1}
+        ],
+        "details": {
+            "description": "Camisa oversize manga larga en mezcla de algodón de color negro con cierre con botón, cuello clásico, manga larga y puños ajustados.",
+            "composition": "Rayón 55%, Algodón 45%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con una tela no elástica pesada."
+        },
+        "model": { 
+            "height": "1.75 m", 
+            "bust": "80 cm", 
+            "hips": "89 cm", 
+            "waist": "61 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 17,
+        "name": "Cardigan tejido con efecto envejecido",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Cardigans",
+        "price": 1161,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/65/21/07/17652107_36997362_1000.jpg",
+        "imageAlt": "Cardigan tejido con efecto envejecido",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 0},
+            {"size": "L", "stock": 2},
+            {"size": "XL", "stock": 4},
+            {"size": "XXL", "stock": 3},
+            {"size": "XXXL", "stock": 1}
+        ],
+        "details": {
+            "description": "Detalle de canalé, manga larga, cierre con botones en la parte delantera y acabado envejecido.",
+            "composition": "Tela 100%, Acrílico 70%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte oversize. Si deseas un ajuste más ajustado, selecciona una talla menos.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.78 m", 
+            "bust": "75 cm", 
+            "hips": "88 cm", 
+            "waist": "60 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 18,
+        "name": "Cardigan largo asimétrico",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Cardigans",
+        "price": 1362,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/15/48/49/33/15484933_29315441_1000.jpg",
+        "imageAlt": "Cardigan largo asimétrico",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 4},
+            {"size": "M", "stock": 0},
+            {"size": "L", "stock": 2},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 3}
+        ],
+        "details": {
+            "description": "Diseño asimétrico con mangas y corte largo.",
+            "composition": "Algodón 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte oversize.",
+            "fabric": "Pieza confeccionada con una tela elástica ligera."
+        },
+        "model": { 
+            "height": "1.75 m", 
+            "bust": "80 cm", 
+            "hips": "89 cm", 
+            "waist": "61 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 19,
+        "name": "Chaqueta biker corta",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Chaquetas",
+        "price": 1899,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/35/03/90/17350390_35937922_1000.jpg",
+        "imageAlt": "Chaqueta biker corta",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 3},
+            {"size": "M", "stock": 1},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 4},
+            {"size": "XXXL", "stock": 2}
+        ],
+        "details": {
+            "description": "Diseño asimétrico y corto, solapas de muesca anchas, cierre descentrado en la parte delantera, forro completo y manga larga.",
+            "composition": "Forro: Cupro 100% / Exterior: Lana 90%, Nylon 10%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.79 m", 
+            "bust": "82 cm", 
+            "hips": "90 cm", 
+            "waist": "61 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 20,
+        "name": "Chaqueta oversize con cinturón",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Chaquetas",
+        "price": 1808,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/86/08/79/17860879_37782285_1000.jpg",
+        "imageAlt": "Chaqueta oversize con cinturón",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 1},
+            {"size": "XXL", "stock": 4},
+            {"size": "XXXL", "stock": 3}
+        ],
+        "details": {
+            "description": "Cuello estilo béisbol, detalle de cinturón, manga larga y dobladillo recto.",
+            "composition": "Cáñamo 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado. Viene con un cinturón ajustable que proporciona un ajuste flexible en la cintura.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.78 m", 
+            "bust": "75 cm", 
+            "hips": "88 cm", 
+            "waist": "60 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 21,
+        "name": "Chaqueta corta con cuello de tortuga",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Chaquetas",
+        "price": 2033,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/39/74/53/17397453_36091228_1000.jpg",
+        "imageAlt": "Chaqueta corta con cuello de tortuga",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 3},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 1},
+            {"size": "XXXL", "stock": 4}
+        ],
+        "details": {
+            "description": "Cuello alto, diseño corto, cierre en la parte delantera y mangas extralargas.",
+            "composition": "Exterior: Triacetato 100% / Forro: Poliéster 65%, Rayón 35%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado, pero es ajustado en la cintura.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.79 m", 
+            "bust": "80 cm", 
+            "hips": "89 cm", 
+            "waist": "61 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 22,
+        "name": "Hoodie con cierre y dobladillo asimétrico",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Hoodies",
+        "price": 1136,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/68/93/37/17689337_37130412_1000.jpg",
+        "imageAlt": "Hoodie con cierre y dobladillo asimétrico",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 3},
+            {"size": "XL", "stock": 5},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Dobladillo asimétrico, cierre en la parte delantera, capucha con cordones y manga larga.",
+            "composition": "Acrílico 70%, Cáñamo 30%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.80 m", 
+            "bust": "77 cm", 
+            "hips": "90 cm", 
+            "waist": "58 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 23,
+        "name": "Falda con tirantes",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Faldas",
+        "price": 1490,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/78/52/24/17785224_37459102_1000.jpg",
+        "imageAlt": "Falda con tirantes",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 5},
+            {"size": "M", "stock": 1},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 3},
+            {"size": "XXL", "stock": 2},
+            {"size": "XXXL", "stock": 4}
+        ],
+        "details": {
+            "description": "Diseño plisado, largura por debajo de la rodilla y costura en contraste.",
+            "composition": "Rayón 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Diseñado para un corte ajustado en la cintura y caderas, pero holgado en las piernas.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.77 m", 
+            "bust": "80 cm", 
+            "hips": "88 cm", 
+            "waist": "60 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 24,
+        "name": "Falda con pliegues",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Faldas",
+        "price": 1607,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/86/14/76/17861476_37783298_1000.jpg",
+        "imageAlt": "Falda con pliegues",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 4},
+            {"size": "L", "stock": 2},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 1},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Tiro alto, diseño plisado, cierre lateral , dos bolsillos laterales y largo medio.",
+            "composition": "Cáñamo 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Diseñado para un corte ajustado en la cintura y caderas, pero holgado en las piernas.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.78 m", 
+            "bust": "75 cm", 
+            "hips": "88 cm", 
+            "waist": "60 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 25,
+        "name": "Falda con volantes",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Faldas",
+        "price": 2031,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/08/81/98/16088198_30295953_1000.jpg",
+        "imageAlt": "Falda con volantes",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 5},
+            {"size": "L", "stock": 4},
+            {"size": "XL", "stock": 3},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 2}
+        ],
+        "details": {
+            "description": "Tiro alto, diseño plisado, cierre lateral , dos bolsillos laterales y largo medio.",
+            "composition": "Exterior: Algodón 100% / Forro: Cupro 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Diseño a paneles, diseño plisado, detalle de volantes y tiro alto.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.78 m", 
+            "bust": "82 cm", 
+            "hips": "90 cm", 
+            "waist": "63 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 28,
+        "name": "Falda asimétrica",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Faldas",
+        "price": 551,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/33/13/52/17331352_35907040_1000.jpg",
+        "imageAlt": "Falda asimétrica",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 3},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 1}
+        ],
+        "details": {
+            "description": "Diseño asimétrico, tiro alto y diseño por la rodilla.",
+            "composition": "Lana 90%, Mohair 10%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Diseñado para un corte ajustado en la cintura y caderas, pero holgado en las piernas.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.76 m", 
+            "bust": "82 cm", 
+            "hips": "89 cm", 
+            "waist": "60 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 29,
+        "name": "Jumpsuit ancho sin mangas",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Jumpsuits",
+        "price": 970,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/78/57/26/16785726_33285916_1000.jpg",
+        "imageAlt": "Jumpsuit ancho sin mangas",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 4},
+            {"size": "M", "stock": 1},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 2},
+            {"size": "XXL", "stock": 5},
+            {"size": "XXXL", "stock": 3}
+        ],
+        "details": {
+            "description": "Tejido de punto fino, diseño sin mangas, corte ancho y cuello cuadrado.",
+            "composition": "Lana 90%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Diseñado para un corte ajustado en la cintura y caderas, pero holgado en las piernas.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.75 m", 
+            "bust": "80 cm", 
+            "hips": "89 cm", 
+            "waist": "61 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 30,
+        "name": "Jumpsuit ancho estilo blazer",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Jumpsuits",
+        "price": 2078,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/15/02/06/73/15020673_26685672_1000.jpg",
+        "imageAlt": "Jumpsuit ancho estilo blazer",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 5},
+            {"size": "M", "stock": 4},
+            {"size": "L", "stock": 2},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 1},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Jumpsuit ancho estilo blazer en lana de color negro con detalles de pliegues, cintura ceñida, solapas de pico, cuello en V, cierre oculto en la parte delantera, manga larga, corte ancho y estilo corto.",
+            "composition": "Lana 90%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte ajustado en el busto, cintura y cadera.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.78 m", 
+            "bust": "82 cm", 
+            "hips": "90 cm", 
+            "waist": "63 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 31,
+        "name": "Jumpsuit ancho con cinturón",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Jumpsuits",
+        "price": 2574,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/52/79/70/16527970_32333936_1000.jpg",
+        "imageAlt": "Jumpsuit ancho con cinturón",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 4},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 5},
+            {"size": "XXXL", "stock": 3}
+        ],
+        "details": {
+            "description": "Manga larga, detalle de cinturón y corte ancho.",
+            "composition": "Tela 65%, Poliéster 35%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado, pero es ajustado en la cintura.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.77 m", 
+            "bust": "80 cm", 
+            "hips": "88 cm", 
+            "waist": "59 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 32,
+        "name": "Jumpsuit camisero con botones",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Jumpsuits",
+        "price": 1517,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/15/75/74/37/15757437_29245986_1000.jpg",
+        "imageAlt": "Jumpsuit camisero con botones",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 3},
+            {"size": "M", "stock": 4},
+            {"size": "L", "stock": 2},
+            {"size": "XL", "stock": 1},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 5}
+        ],
+        "details": {
+            "description": "Cuello clásico, cierre con botones en la parte delantera, bolsillos con cierre en la parte delantera, dos bolsillos en la parte delantera y manga larga.",
+            "composition": "Lana 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Diseñado para un corte ajustado en la cintura y caderas, pero holgado en las piernas.",
+            "fabric": "Pieza confeccionada con tela elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.75 m", 
+            "bust": "80 cm", 
+            "hips": "89 cm", 
+            "waist": "61 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 33,
+        "name": "Pantalones tapered capri",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Pantalones",
+        "price": 618,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/01/34/98/17013498_34338787_1000.jpg",
+        "imageAlt": "Pantalones tapered capri",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 2},
+            {"size": "M", "stock": 4},
+            {"size": "L", "stock": 1},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 3}
+        ],
+        "details": {
+            "description": "Corte tapered , tiro alto, cierre con botón, trabillas y dos bolsillos laterales abiertos.",
+            "composition": "Algodón 73%, Poliéster 27%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.79 m", 
+            "bust": "80 cm", 
+            "hips": "88 cm", 
+            "waist": "58 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 34,
+        "name": "Pantalones leggins con logo en la pretina",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Pantalones",
+        "price": 994,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/89/97/86/16899786_35628690_1000.jpg",
+        "imageAlt": "Pantalones leggins con logo en la pretina",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 4},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 3},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 1},
+            {"size": "XXXL", "stock": 5}
+        ],
+        "details": {
+            "description": "Detalle de abertura, logo en la pretina y ajuste stretch.",
+            "composition": "Rayón 100% / Exterior: Acrílico 60%, Rayón 35%, Poliamida 5%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte ajustado.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.75 m", 
+            "bust": "80 cm", 
+            "hips": "89 cm", 
+            "waist": "61 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 35,
+        "name": "Pantalones de vestir capri",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Pantalones",
+        "price": 530,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/15/46/05/75/15460575_27616612_1000.jpg",
+        "imageAlt": "Pantalones de vestir capri",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 0},
+            {"size": "L", "stock": 4},
+            {"size": "XL", "stock": 1},
+            {"size": "XXL", "stock": 3},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Tiro alto, cierre con hebilla, dos bolsillos laterales abiertos y dos bolsillos posteriores con ribete.",
+            "composition": "Lana 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Diseñado para un corte ajustado en la cintura y caderas, pero holgado en las piernas.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.75 m", 
+            "bust": "83 cm", 
+            "hips": "92 cm", 
+            "waist": "58 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 36,
+        "name": "Pantalones capri",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Pantalones",
+        "price": 1134,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/35/03/07/17350307_35898175_600.jpg",
+        "imageAlt": "Pantalones capri",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 3},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 4}
+        ],
+        "details": {
+            "description": "Ribete de cuero, lana stretch, tiro alto, botón y cierre en la parte delantera, trabillas, dos bolsillos laterales oblicuos y diseño corto.",
+            "composition": "Lana 85%, Nylon 15%",
+            "care": "Limpieza especializada.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte slim.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.78 m", 
+            "bust": "82 cm", 
+            "hips": "90 cm", 
+            "waist": "63 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 37,
+        "name": "Pantalones leggings con tiro alto",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Pantalones",
+        "price": 668,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/89/97/87/16899787_35295136_600.jpg",
+        "imageAlt": "Pantalones leggings con tiro alto",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 3},
+            {"size": "M", "stock": 0},
+            {"size": "L", "stock": 4},
+            {"size": "XL", "stock": 2},
+            {"size": "XXL", "stock": 1},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Correa con diseño de malla, logo en la pretina, tiro alto, corte superskinny y diseño por el tobillo.",
+            "composition": "Acrílico 60%, Rayón 35%, Poliuretano 5%",
+            "care": "Lavar en lavadora.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte ajustado.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.76 m", 
+            "bust": "82 cm", 
+            "hips": "89 cm", 
+            "waist": "60 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 38,
+        "name": "Pantalones de vestir asimétricos",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Pantalones",
+        "price": 962,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/36/84/05/17368405_37034513_600.jpg",
+        "imageAlt": "Pantalones de vestir asimétricos",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 2},
+            {"size": "M", "stock": 4},
+            {"size": "L", "stock": 3},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 1},
+            {"size": "XXXL", "stock": 5}
+        ],
+        "details": {
+            "description": "Diseño asimétrico, tiro alto y cierre con botón.",
+            "composition": "Lana 85%, Nylon 15%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Diseñado para un corte ajustado en la cintura y caderas, pero holgado en las piernas.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.79 m", 
+            "bust": "80 cm", 
+            "hips": "89 cm", 
+            "waist": "61 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 39,
+        "name": "Pantalones slim con tiro alto",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Pantalones",
+        "price": 1272,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/14/51/30/98/14513098_22012451_600.jpg",
+        "imageAlt": "Pantalones slim con tiro alto",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 1},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 3},
+            {"size": "XXL", "stock": 5},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Pantalones slim con tiro alto en lana de color negro con cierre con botones en la parte delantera, pretina con trabillas, bolsillos laterales, bolsillos en la parte posterior y diseño corto.",
+            "composition": "Lana 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Diseñado para un corte ajustado en la cintura y caderas, pero holgado en las piernas.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.77 m", 
+            "bust": "81 cm", 
+            "hips": "86 cm", 
+            "waist": "61 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 40,
+        "name": "Pantalones cruzados con tiras",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Pantalones",
+        "price": 2201,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/39/45/00/16394500_32610390_600.jpg",
+        "imageAlt": "Pantalones cruzados con tiras",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 1},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 3},
+            {"size": "XXL", "stock": 5},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Trabillas, cierre oculto en la parte delantera y corte capri.",
+            "composition": "Algodón 80%, Cáñamo 20%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Diseñado para un corte ajustado en la cintura y caderas, pero holgado en las piernas.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.77 m", 
+            "bust": "80 cm", 
+            "hips": "88 cm", 
+            "waist": "60 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 42,
+        "name": "Pantalones cortos con diseño asimétrico",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Pantalones",
+        "price": 1242,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/60/77/69/17607769_36798821_600.jpg",
+        "imageAlt": "Pantalones cortos con diseño asimétrico",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 5},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 1},
+            {"size": "XL", "stock": 3},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 4}
+        ],
+        "details": {
+            "description": "Diseño asimétrico, corte capri, cierre con botones en la parte delantera y dos bolsillos diagonales en los laterales.",
+            "composition": "Tela 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Diseñado para un corte ajustado en la cintura y caderas, pero holgado en las piernas.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.75 m", 
+            "bust": "80 cm", 
+            "hips": "89 cm", 
+            "waist": "61 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 43,
+        "name": "Remera oversize con logo estampado",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Remeras",
+        "price": 257,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/86/09/19/17860919_37781850_1000.jpg",
+        "imageAlt": "Remera oversize con logo estampado",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 5},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 3},
+            {"size": "XL", "stock": 1},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 4}
+        ],
+        "details": {
+            "description": "Logo estampado en la parte delantera, cuello redondo y manga corta.",
+            "composition": "Algodón 100%",
+            "care": "Lavar a mano.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte oversize. Si deseas un ajuste más ajustado, selecciona una talla menos.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.78 m", 
+            "bust": "75 cm", 
+            "hips": "88 cm", 
+            "waist": "60 cm", 
+            "size": "L" 
+        }
+    },
+    {
+        "id": 43,
+        "name": "Remera con hombros caídos",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Remeras",
+        "price": 1153,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/32/15/56/17321556_35842394_600.jpg",
+        "imageAlt": "Remera con hombros caídos",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 0},
+            {"size": "L", "stock": 4},
+            {"size": "XL", "stock": 2},
+            {"size": "XXL", "stock": 3},
+            {"size": "XXXL", "stock": 5}
+        ],
+        "details": {
+            "description": "Detalle de ribete, cuello redondo, hombros caídos, manga corta y dobladillo curvo.",
+            "composition": "Algodón 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.79 m", 
+            "bust": "82 cm", 
+            "hips": "90 cm", 
+            "waist": "61 cm", 
+            "size": "S" 
+        }
+    },
+    {
+        "id": 46,
+        "name": "Remera semitranslúcida manga larga",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Remeras",
+        "price": 471,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/39/33/67/16393367_32608714_1000.jpg",
+        "imageAlt": "Remera semitranslúcida manga larga",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 4},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 1},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 3},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Estructura semitransparente, cuello redondo y manga larga.",
+            "composition": "Algodón 100%",
+            "care": "Lavar en lavadora.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte oversize.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.77 m", 
+            "bust": "80 cm", 
+            "hips": "88 cm", 
+            "waist": "60 cm", 
+            "size": "M" 
+        }
+    },
+    {
+        "id": 51,
+        "name": "Sweater capa con estampado de mano",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Sweaters",
+        "price": 1566,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/89/97/83/16899783_35294215_1000.jpg",
+        "imageAlt": "Sweater capa con estampado de mano",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 3},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 5},
+            {"size": "XXXL", "stock": 6}
+        ],
+        "details": {
+            "description": "Estampado de mano y cuello vuelto.",
+            "composition": "Lana 87%, Nylon 13%",
+            "care": "No lavar ni secar.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte oversize. Si deseas un ajuste más ajustado, selecciona una talla menos.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.76 m", 
+            "bust": "82 cm", 
+            "hips": "89 cm", 
+            "waist": "60 cm", 
+            "size": "M"
+        }
+    },
+    {
+        "id": 51,
+        "name": "Sweater con detalles de flecos",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Sweaters",
+        "price": 1325,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/01/18/45/17011845_34338741_1000.jpg",
+        "imageAlt": "Sweater con detalles de flecos",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 2},
+            {"size": "M", "stock": 5},
+            {"size": "L", "stock": 4},
+            {"size": "XL", "stock": 1},
+            {"size": "XXL", "stock": 3},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Estructura tejida, detalle de flecos, cuello redondo y manga larga.",
+            "composition": "Lana 100%",
+            "care": "No lavar ni secar.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.79 m", 
+            "bust": "80 cm", 
+            "hips": "88 cm", 
+            "waist": "58 cm", 
+            "size": "S"
+        }
+    },
+    {
+        "id": 52,
+        "name": "Sweater en tejido de ochos",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Sweaters",
+        "price": 810,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/78/52/21/17785221_37457274_1000.jpg",
+        "imageAlt": "Sweater en tejido de ochos",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 2},
+            {"size": "M", "stock": 5},
+            {"size": "L", "stock": 4},
+            {"size": "XL", "stock": 1},
+            {"size": "XXL", "stock": 3},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Tejido de ochos, cuello redondo, manga larga y ribete de canalé.",
+            "composition": "Lana 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.80 m", 
+            "bust": "77 cm", 
+            "hips": "90 cm", 
+            "waist": "58 cm", 
+            "size": "M"
+        }
+    },
+    {
+        "id": 53,
+        "name": "Sweater con efecto envejecido",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Sweaters",
+        "price": 744,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/68/74/39/17687439_37131084_1000.jpg",
+        "imageAlt": "Sweater con efecto envejecido",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 5},
+            {"size": "M", "stock": 2},
+            {"size": "L", "stock": 1},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 3},
+            {"size": "XXXL", "stock": 4}
+        ],
+        "details": {
+            "description": "Acabado envejecido, armazón oversize, estructura tejida, cuello redondo, manga larga, puños de canalé y dobladillo de canalé.",
+            "composition": "Acrílico 70%, Cáñamo 30%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.80 m", 
+            "bust": "77 cm", 
+            "hips": "90 cm", 
+            "waist": "58 cm", 
+            "size": "M"
+        }
+    },
+    {
+        "id": 54,
+        "name": "Vestido camisero con pliegues",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Vestidos",
+        "price": 1270,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/15/99/96/33/15999633_29899121_1000.jpg",
+        "imageAlt": "Vestido camisero con pliegues",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 3},
+            {"size": "M", "stock": 5},
+            {"size": "L", "stock": 0},
+            {"size": "XL", "stock": 1},
+            {"size": "XXL", "stock": 4},
+            {"size": "XXXL", "stock": 2}
+        ],
+        "details": {
+            "description": "Cuello clásico, cierre con botones en la parte delantera, manga larga y largura media.",
+            "composition": "Lana 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.75 m", 
+            "bust": "80 cm", 
+            "hips": "89 cm", 
+            "waist": "61 cm", 
+            "size": "L"
+        }
+    },
+    {
+        "id": 56,
+        "name": "Vestido camisero oversize",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Vestidos",
+        "price": 1860,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/48/13/32/16481332_32011385_1000.jpg",
+        "imageAlt": "Vestido camisero oversize",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 5},
+            {"size": "M", "stock": 0},
+            {"size": "L", "stock": 4},
+            {"size": "XL", "stock": 2},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Cuello clásico, botones en la parte delantera, manga corta, dos bolsillos laterales, abertura lateral y largura media.",
+            "composition": "Algodón 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.78 m", 
+            "bust": "80 cm", 
+            "hips": "92 cm", 
+            "waist": "65 cm", 
+            "size": "S"
+        }
+    },
+    {
+        "id": 57,
+        "name": "Vestido midi asimétrico",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Vestidos",
+        "price": 1860,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/61/67/12/16616712_32543973_1000.jpg",
+        "imageAlt": "Vestido midi asimétrico",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 5},
+            {"size": "M", "stock": 0},
+            {"size": "L", "stock": 4},
+            {"size": "XL", "stock": 2},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Diseño asimétrico, tejido de punto fino, cuello cuadrado y diseño sin mangas.",
+            "composition": "Triacetato 57%, Poliéster 43%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.77 m", 
+            "bust": "81 cm", 
+            "hips": "87 cm", 
+            "waist": "63 cm", 
+            "size": "M"
+        }
+    },
+    {
+        "id": 59,
+        "name": "Vestido largo con bolsillos",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Vestidos",
+        "price": 1122,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/39/74/52/17397452_36091225_600.jpg",
+        "imageAlt": "Vestido largo con bolsillos",
+        "color": "Blanco",
+        "sizes": [
+            {"size": "S", "stock": 2},
+            {"size": "M", "stock": 4},
+            {"size": "L", "stock": 1},
+            {"size": "XL", "stock": 3},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 5}
+        ],
+        "details": {
+            "description": "Cuello clásico, bolsillo en la parte delantera, manga corta y diseño bajo.",
+            "composition": "Algodón 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.75 m", 
+            "bust": "80 cm", 
+            "hips": "89 cm", 
+            "waist": "61 cm", 
+            "size": "M"
+        }
+    },
+    {
+        "id": 61,
+        "name": "Vestido camisero con cuello asimétrico",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Vestidos",
+        "price": 718,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/13/61/55/16136155_30834205_600.jpg",
+        "imageAlt": "Vestido camisero con cuello asimétrico",
+        "color": "Blanco",
+        "sizes": [
+            {"size": "S", "stock": 4},
+            {"size": "M", "stock": 0},
+            {"size": "L", "stock": 5},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 2}
+        ],
+        "details": {
+            "description": "Botones en la parte delantera, cintura con lazo, manga larga, puños con botón, largura media y dobladillo asimétrico.",
+            "composition": "Algodón 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado. Viene con un cinturón ajustable que proporciona un ajuste flexible en la cintura.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.80 m", 
+            "bust": "80 cm", 
+            "hips": "89 cm", 
+            "waist": "60 cm", 
+            "size": "M"
+        }
+    },
+    {
+        "id": 67,
+        "name": "Vestido asimétrico drapeado",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Vestidos",
+        "price": 492,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/33/20/13/17332013_35907061_600.jpg",
+        "imageAlt": "Vestido asimétrico drapeado",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 2},
+            {"size": "M", "stock": 5},
+            {"size": "L", "stock": 1},
+            {"size": "XL", "stock": 3},
+            {"size": "XXL", "stock": 0},
+            {"size": "XXXL", "stock": 0}
+        ],
+        "details": {
+            "description": "Diseño drapeado, cuello redondo, manga corta y dobladillo asimétrico.",
+            "composition": "Lyocell 63%, Cupro 37%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado, pero es ajustado en la cintura.",
+            "fabric": "Pieza confeccionada con tela de peso medio."
+        },
+        "model": { 
+            "height": "1.76 m", 
+            "bust": "82 cm", 
+            "hips": "89 cm", 
+            "waist": "60 cm", 
+            "size": "M"
+        }
+    },
+    {
+        "id": 69,
+        "name": "Vestido asimétrico drapeado",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Vestidos",
+        "price": 5069,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/52/67/41/17526741_36496152_600.jpg",
+        "imageAlt": "Vestido asimétrico drapeado",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 0},
+            {"size": "M", "stock": 0},
+            {"size": "L", "stock": 5},
+            {"size": "XL", "stock": 4},
+            {"size": "XXL", "stock": 3},
+            {"size": "XXXL", "stock": 1}
+        ],
+        "details": {
+            "description": "Diseño asimétrico, diseño drapeado, cuello cuadrado, diseño sin mangas y diseño largo.",
+            "composition": "Exterior: Algodón 61% / Lana 39%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte ajustado en el busto, cintura y cadera.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.75 m", 
+            "bust": "82 cm", 
+            "hips": "91 cm", 
+            "waist": "64 cm", 
+            "size": "S"
+        }
+    },
+    {
+        "id": 74,
+        "name": "Vestido con abertura en la espalda",
+        "brand": "Yohji Yamamoto",
+        "category": "Indumentaria",
+        "product": "Vestidos",
+        "price": 2589,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/48/21/86/16482186_32013002_600.jpg",
+        "imageAlt": "Vestido con abertura en la espalda",
+        "color": "Negro",
+        "sizes": [
+            {"size": "S", "stock": 5},
+            {"size": "M", "stock": 4},
+            {"size": "L", "stock": 1},
+            {"size": "XL", "stock": 0},
+            {"size": "XXL", "stock": 2},
+            {"size": "XXXL", "stock": 3}
+        ],
+        "details": {
+            "description": "Detalle de aberturas, cuello cuadrado, cierre lateral con botón, cuello cuadrado, diseño sin mangas y largura media.",
+            "composition": "Lana 100%",
+            "care": "Lavar en seco.",
+            "fit": "El ajuste de este artículo es exacto. Recomendamos que selecciones tu talla de costumbre.",
+            "cut": "Este artículo posee un corte holgado.",
+            "fabric": "Pieza confeccionada con tela no elástica de peso medio."
+        },
+        "model": { 
+            "height": "1.78 m", 
+            "bust": "80 cm", 
+            "hips": "92 cm", 
+            "waist": "65 cm", 
+            "size": "S"
+        }
+    },
+    {
+        "id": 75,
+        "name": "Backpack Y",
+        "brand": "discord Yohji Yamamoto",
+        "category": "Bolsos",
+        "product": "Backpack",
+        "price": 1054,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/36/35/67/16363567_32562120_1000.jpg",
+        "imageAlt": "Backpack Y",
+        "color": "Blanco",
+        "sizes": {
+            "Height": "38 cm",
+            "Width": "30 cm",
+            "Depth": "20 cm",
+            "Strap": "31 cm"
+        },
+        "details": {
+            "description": "Dos correas ajustables para los hombros, cierre en la parte posterior y logo en relieve en la parte delantera.",
+            "composition": "Nylon 100%",
+            "care": "Limpieza especializada."
+        }
+    },
+    {
+        "id": 77,
+        "name": "Crossbody estilo cartera",
+        "brand": "discord Yohji Yamamoto",
+        "category": "Bolsos",
+        "product": "Crossbody",
+        "price": 825,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/36/27/71/16362771_32562099_600.jpg",
+        "imageAlt": "Crossbody estilo cartera",
+        "color": "Negro",
+        "sizes": {
+            "Height": "12 cm",
+            "Width": "21 cm",
+            "Depth": "6.50 cm",
+            "Strap": "23 cm"
+        },
+        "details": {
+            "description": "Textura granulada, logo en relieve en la parte delantera, cierre en el tope, compartimentos internos para tarjetas, asa ajustable en la parte superior y bolsa removible.",
+            "composition": "Cuero 100%",
+            "care": "Limpieza especializada."
+        }
+    },
+    {
+        "id": 78,
+        "name": "Crossbody Aerial",
+        "brand": "discord Yohji Yamamoto",
+        "category": "Bolsos",
+        "product": "Crossbody",
+        "price": 1215,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/15/29/97/25/15299725_26964910_600.jpg",
+        "imageAlt": "Crossbody Aerial",
+        "color": "Plateado",
+        "sizes": {
+            "Height": "18.50 cm",
+            "Width": "21 cm",
+            "Depth": "10 cm",
+            "Strap": "110 cm"
+        },
+        "details": {
+            "description": "Bolsa de hombro Aerial en piel de becerro de color gris con superficie lisa con acabado mate, logo grabado, cierre magnético y correa ajustable para el hombro.",
+            "composition": "Piel De Becerro 100%",
+            "care": "Limpieza especializada."
+        }
+    },
+    {
+        "id": 79,
+        "name": "Crossbody con dijes de hojas",
+        "brand": "discord Yohji Yamamoto",
+        "category": "Bolsos",
+        "product": "Crossbody",
+        "price": 857,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/07/60/06/16076006_30898702_600.jpg",
+        "imageAlt": "Crossbody con dijes de hojas",
+        "color": "Negro",
+        "sizes": {
+            "Height": "10 cm",
+            "Width": "16 cm",
+            "Depth": "4.50 cm",
+            "Strap": "60 cm"
+        },
+        "details": {
+            "description": "Bolsa de hombro con dijes de hojas con dije con apliques, cierre en la parte de arriba, correa de hombro y compartimento interno.",
+            "composition": "Rayón 100%",
+            "care": "Limpieza especializada."
+        }
+    },
+    {
+        "id": 79,
+        "name": "Crossbody Matofu",
+        "brand": "discord Yohji Yamamoto",
+        "category": "Bolsos",
+        "product": "Crossbody",
+        "price": 933,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/15/29/93/91/15299391_26966121_1000.jpg",
+        "imageAlt": "Crossbody con dijes de hojas",
+        "color": "Negro",
+        "sizes": {
+            "Height": "22 cm",
+            "Width": "33 cm",
+            "Depth": "6 cm",
+            "Strap": "100 cm"
+        },
+        "details": {
+            "description": "Bolsa de hombro Matofu en piel de becerro con efecto acolchado, acolchado en los tobillos, correa ajustable para el hombro, parte superior plegable y compartimento interno.",
+            "composition": "Poliéster 80%, Piel De Becerro 20%,",
+            "care": "Limpieza especializada."
+        }
+    },
+    {
+        "id": 80,
+        "name": "Bolsa de mano mini Y",
+        "brand": "discord Yohji Yamamoto",
+        "category": "Bolsos",
+        "product": "Mini",
+        "price": 558,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/36/42/84/16364284_32562139_1000.jpg",
+        "imageAlt": "Bolsa de mano mini Y",
+        "color": "Blanco",
+        "sizes": {
+            "Height": "20 cm",
+            "Width": "10 cm",
+            "Depth": "7 cm",
+            "Handle": "12 cm"
+        },
+        "details": {
+            "description": "Correa para la muñeca, acabado en tono plateado y cierre en la parte posterior.",
+            "composition": "Cuero 100%",
+            "care": "Limpieza especializada."
+        }
+    },
+    {
+        "id": 81,
+        "name": "Bolsa de mano mini con broche",
+        "brand": "discord Yohji Yamamoto",
+        "category": "Bolsos",
+        "product": "Mini",
+        "price": 920,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/17/40/31/36/17403136_36298431_600.jpg",
+        "imageAlt": "Bolsa de mano mini con broche",
+        "color": "Blanco",
+        "sizes": {
+            "Height": "9 cm",
+            "Width": "15 cm",
+            "Depth": "4 cm",
+            "Handle": "10 cm",
+            "Strap": "68 cm"
+        },
+        "details": {
+            "description": "Acabado en tono plateado, logo en relieve en la parte delantera, correa de cadena removible para el hombro, cierre a presión y compartimento principal.",
+            "composition": "Cuero 100%",
+            "care": "Limpieza especializada."
+        }
+    },
+    {
+        "id": 82,
+        "name": "Tote Origami",
+        "brand": "discord Yohji Yamamoto",
+        "category": "Bolsos",
+        "product": "Tote",
+        "price": 1063,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/07/54/69/16075469_30895737_1000.jpg",
+        "imageAlt": "Tote Origami",
+        "color": "Plateado",
+        "sizes": {
+            "Height": "40 cm",
+            "Width": "42 cm",
+            "Handle": "30 cm"
+        },
+        "details": {
+            "description": "Estampado metalizado, diseño abierto en el tope, asas en el tope y compartimento interno.",
+            "composition": "Lana 100%",
+            "care": "Limpieza especializada."
+        }
+    },
+    {
+        "id": 83,
+        "name": "Tote Crown",
+        "brand": "discord Yohji Yamamoto",
+        "category": "Bolsos",
+        "product": "Tote",
+        "price": 5416,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/36/42/89/16364289_32566842_600.jpg",
+        "imageAlt": "Tote Crown",
+        "color": "Negro",
+        "sizes": {
+            "Height": "37 cm",
+            "Width": "33 cm",
+            "Depth": "12 cm",
+            "Strap": "35 cm"
+        },
+        "details": {
+            "description": "Correa ajustable para el hombro, cierre en el tope, bolsillo interno con cierre y parche del logo en el interior.",
+            "composition": "Cuero 100%",
+            "care": "Limpieza especializada."
+        }
+    },
+    {
+        "id": 84,
+        "name": "Tote oversize",
+        "brand": "discord Yohji Yamamoto",
+        "category": "Bolsos",
+        "product": "Tote",
+        "price": 3251,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/36/27/61/16362761_32360696_600.jpg",
+        "imageAlt": "Tote oversize",
+        "color": "Negro",
+        "sizes": {
+            "Height": "40 cm",
+            "Width": "33 cm",
+            "Depth": "15 cm",
+            "Strap": "33 cm"
+        },
+        "details": {
+            "description": "Acabado en tono negro, diseño con un único tirante y bolsillo interno.",
+            "composition": "Cuero 100%",
+            "care": "Limpieza especializada."
+        }
+    },
+    {
+        "id": 85,
+        "name": "Tote redonda mediana",
+        "brand": "discord Yohji Yamamoto",
+        "category": "Bolsos",
+        "product": "Tote",
+        "price": 2446,
+        "imageSrc": "https://cdn-images.farfetch-contents.com/16/36/27/59/16362759_32023920_600.jpg",
+        "imageAlt": "Tote redonda mediana",
+        "color": "Negro",
+        "sizes": {
+            "Height": "22 cm",
+            "Width": "48 cm",
+            "Depth": "12 cm",
+            "Strap": "21 cm"
+        },
+        "details": {
+            "description": "Textura granulada, cierre en el tope, asa redonda en la parte superior, compartimento principal y bolsillos internos con cierre.",
+            "composition": "Cuero 100%",
+            "care": "Limpieza especializada."
+        }
+    }
+]

@@ -3,7 +3,7 @@ import Item from './Item'
 
 const ItemList = () => {
 
-    const url = 'https://run.mocky.io/v3/7b702fa5-ebed-478a-8591-d4dcec30e667'
+    const url = 'https://run.mocky.io/v3/907be23b-5c68-46c0-8178-285e21f6b1ce'
 
     const [items, setItems] = useState([])
 

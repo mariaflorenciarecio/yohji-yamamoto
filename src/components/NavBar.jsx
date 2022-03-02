@@ -22,6 +22,7 @@ const navigation = {
                         { name: 'Chaquetas', href: '#' },
                         { name: 'Hoodies', href: '#' },
                         { name: 'Faldas', href: '#' },
+                        { name: 'Jumpsuits', href: '#' },
                         { name: 'Pantalones', href: '#' },
                         { name: 'Remeras', href: '#' },
                         { name: 'Sweaters', href: '#' },
@@ -40,7 +41,6 @@ const navigation = {
                     name: 'Bolsos',
                     items: [
                         { name: 'Backpack', href: '#' },
-                        { name: 'Clutch', href: '#' },
                         { name: 'Crossbody', href: '#' },
                         { name: 'Mini', href: '#' },
                         { name: 'Tote', href: '#' },
