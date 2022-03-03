@@ -1,4 +1,5 @@
 import { Fragment, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { MenuIcon, UserCircleIcon, XIcon } from '@heroicons/react/solid'
 import logo from '../assets/logo.png'
@@ -246,16 +247,13 @@ const NavBar = () => {
                     </Popover.Group>
 
                     {/* Logo */}
-                    <div className="m-auto">
-                        <a href="#" className="text-black">
-                            <span className="sr-only">THE SHOP Yohji Yamamoto</span>
-                            <img
-                                className="aspect-auto h-10 object-contain"
-                                src={logo}
-                                alt="Logo THE SHOP Yohji Yamamoto."
-                            />
-                        </a>
-                    </div>
+                    <Link to='/' className="m-auto">
+                        <img
+                            className="aspect-auto h-10 object-contain"
+                            src={logo}
+                            alt="Logo THE SHOP Yohji Yamamoto."
+                        />
+                    </Link>
 
                     {/* Iconos */}
                     <div className="flex flex-row items-center justify-end text-black">
