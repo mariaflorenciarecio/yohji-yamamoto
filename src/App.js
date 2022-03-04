@@ -10,15 +10,14 @@ import {
   Footer,
 } from './components'
 
-import { 
-  About, 
+import {  
   Cart, 
   Checkout, 
   Error, 
   Home, 
+  ItemDetail,
+  ItemList,
   PrivateRoute, 
-  Products, 
-  SingleProduct, 
 } from './pages'
 
 function App() {
@@ -28,12 +27,10 @@ function App() {
       <Sidebar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='cart' element={<Cart />} />
-        <Route path='item' element={<Products />}>
-          <Route path=':id' element={<SingleProduct />} />
-        </Route>
-        <Route path='checkout' element={<Checkout />} />
+        <Route path='/category/:categoryId' element={<ItemList />} />
+        <Route path='/item/:itemId' element={<ItemDetail />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/checkout' element={<Checkout />} />
         <Route path='*' element={<Error />} />
       </Routes>
       <Footer />

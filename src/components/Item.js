@@ -1,7 +1,7 @@
 import { HeartIcon, ShoppingCartIcon, EyeIcon } from '@heroicons/react/solid'
 import { Link } from 'react-router-dom'
 
-const Item = ({ item: i }) => {
+const Item = ({ item: i}) => {
 
     return (
         <>

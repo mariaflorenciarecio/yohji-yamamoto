@@ -1,6 +1,6 @@
 [
     {
-        "id": 3,
+        "id": 1,
         "name": "Abrigo Tokyo",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -34,7 +34,7 @@
         }
     },
     {
-        "id": 4,
+        "id": 2,
         "name": "Abrigo Yokohama",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -68,7 +68,7 @@
         }
     },
     {
-        "id": 5,
+        "id": 3,
         "name": "Blazer Osaka",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -102,7 +102,7 @@
         }
     },
     {
-        "id": 6,
+        "id": 4,
         "name": "Blazer Nagoya",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -136,7 +136,7 @@
         }
     },
     {
-        "id": 8,
+        "id": 5,
         "name": "Blazer Sapporo",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -170,7 +170,7 @@
         }
     },
     {
-        "id": 9,
+        "id": 6,
         "name": "Camisa Kobe",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -204,7 +204,7 @@
         }
     },
     {
-        "id": 11,
+        "id": 7,
         "name": "Camisa Kyoto",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -238,7 +238,7 @@
         }
     },
     {
-        "id": 12,
+        "id": 8,
         "name": "Camisa Fukuoka",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -272,7 +272,7 @@
         }
     },
     {
-        "id": 13,
+        "id": 9,
         "name": "Camisa Kawasaki",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -306,7 +306,7 @@
         }
     },
     {
-        "id": 14,
+        "id": 10,
         "name": "Camisa Saitama",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -340,7 +340,7 @@
         }
     },
     {
-        "id": 15,
+        "id": 11,
         "name": "Camisa Hiroshima",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -374,7 +374,7 @@
         }
     },
     {
-        "id": 16,
+        "id": 12,
         "name": "Camisa Yono",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -408,7 +408,7 @@
         }
     },
     {
-        "id": 17,
+        "id": 13,
         "name": "Cardigan Sendai",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -442,7 +442,7 @@
         }
     },
     {
-        "id": 18,
+        "id": 14,
         "name": "Cardigan Kitakyushu",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -476,7 +476,7 @@
         }
     },
     {
-        "id": 19,
+        "id": 15,
         "name": "Chaqueta Chiba",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -510,7 +510,7 @@
         }
     },
     {
-        "id": 20,
+        "id": 16,
         "name": "Chaqueta Sakai",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -544,7 +544,7 @@
         }
     },
     {
-        "id": 21,
+        "id": 17,
         "name": "Chaqueta Shizuoka",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -578,7 +578,7 @@
         }
     },
     {
-        "id": 22,
+        "id": 18,
         "name": "Hoodie Kumamoto",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -612,7 +612,7 @@
         }
     },
     {
-        "id": 23,
+        "id": 19,
         "name": "Falda Okayama",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -646,7 +646,7 @@
         }
     },
     {
-        "id": 24,
+        "id": 20,
         "name": "Falda Hamamatsu",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -680,7 +680,7 @@
         }
     },
     {
-        "id": 25,
+        "id": 21,
         "name": "Falda Hachioji",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -714,7 +714,7 @@
         }
     },
     {
-        "id": 28,
+        "id": 22,
         "name": "Falda Honcho",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -748,7 +748,7 @@
         }
     },
     {
-        "id": 29,
+        "id": 23,
         "name": "Jumpsuit Kagoshima",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -782,7 +782,7 @@
         }
     },
     {
-        "id": 30,
+        "id": 24,
         "name": "Jumpsuit Niigata",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -816,7 +816,7 @@
         }
     },
     {
-        "id": 31,
+        "id": 25,
         "name": "Jumpsuit Himeji",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -850,7 +850,7 @@
         }
     },
     {
-        "id": 32,
+        "id": 26,
         "name": "Jumpsuit Matsudo",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -884,7 +884,7 @@
         }
     },
     {
-        "id": 33,
+        "id": 27,
         "name": "Pantalón Kawaguchi",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -918,7 +918,7 @@
         }
     },
     {
-        "id": 34,
+        "id": 28,
         "name": "Pantalón Kanazawa",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -952,7 +952,7 @@
         }
     },
     {
-        "id": 35,
+        "id": 29,
         "name": "Pantalón Utsunomiya",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -986,7 +986,7 @@
         }
     },
     {
-        "id": 36,
+        "id": 30,
         "name": "Pantalón Oita",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1020,7 +1020,7 @@
         }
     },
     {
-        "id": 37,
+        "id": 31,
         "name": "Pantalón Matsuyama",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1054,7 +1054,7 @@
         }
     },
     {
-        "id": 38,
+        "id": 32,
         "name": "Pantalón Amagasaki",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1088,7 +1088,7 @@
         }
     },
     {
-        "id": 39,
+        "id": 33,
         "name": "Pantalón Kurashiki",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1122,7 +1122,7 @@
         }
     },
     {
-        "id": 40,
+        "id": 34,
         "name": "Pantalón Yokosuka",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1156,7 +1156,7 @@
         }
     },
     {
-        "id": 42,
+        "id": 35,
         "name": "Pantalón Nagasaki",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1190,7 +1190,7 @@
         }
     },
     {
-        "id": 43,
+        "id": 36,
         "name": "Remera Hirakata",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1224,7 +1224,7 @@
         }
     },
     {
-        "id": 43,
+        "id": 37,
         "name": "Remera Machida",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1258,7 +1258,7 @@
         }
     },
     {
-        "id": 46,
+        "id": 38,
         "name": "Remera Fujisawa",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1292,7 +1292,7 @@
         }
     },
     {
-        "id": 51,
+        "id": 39,
         "name": "Sweater Toyonaka",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1326,7 +1326,7 @@
         }
     },
     {
-        "id": 51,
+        "id": 40,
         "name": "Sweater Fukuyama",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1360,7 +1360,7 @@
         }
     },
     {
-        "id": 52,
+        "id": 41,
         "name": "Sweater Toyohashi",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1394,7 +1394,7 @@
         }
     },
     {
-        "id": 53,
+        "id": 42,
         "name": "Sweater Minato",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1428,7 +1428,7 @@
         }
     },
     {
-        "id": 54,
+        "id": 43,
         "name": "Vestido Nara",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1462,7 +1462,7 @@
         }
     },
     {
-        "id": 56,
+        "id": 44,
         "name": "Vestido Toyota",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1496,7 +1496,7 @@
         }
     },
     {
-        "id": 57,
+        "id": 45,
         "name": "Vestido Nagano",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1530,7 +1530,7 @@
         }
     },
     {
-        "id": 59,
+        "id": 46,
         "name": "Vestido Iwaki",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1564,7 +1564,7 @@
         }
     },
     {
-        "id": 61,
+        "id": 47,
         "name": "Vestido Asahikawa",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1598,7 +1598,7 @@
         }
     },
     {
-        "id": 67,
+        "id": 48,
         "name": "Vestido Takatsuki",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1632,7 +1632,7 @@
         }
     },
     {
-        "id": 69,
+        "id": 49,
         "name": "Vestido Okazaki",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1666,7 +1666,7 @@
         }
     },
     {
-        "id": 74,
+        "id": 50,
         "name": "Vestido Suita",
         "brand": "Yohji Yamamoto",
         "category": "Indumentaria",
@@ -1700,7 +1700,7 @@
         }
     },
     {
-        "id": 75,
+        "id": 51,
         "name": "Backpack Wakayama",
         "brand": "discord Yohji Yamamoto",
         "category": "Bolsos",
@@ -1722,7 +1722,7 @@
         }
     },
     {
-        "id": 77,
+        "id": 52,
         "name": "Crossbody Koriyama",
         "brand": "discord Yohji Yamamoto",
         "category": "Bolsos",
@@ -1744,7 +1744,7 @@
         }
     },
     {
-        "id": 78,
+        "id": 53,
         "name": "Crossbody Kashiwa",
         "brand": "discord Yohji Yamamoto",
         "category": "Bolsos",
@@ -1766,7 +1766,7 @@
         }
     },
     {
-        "id": 79,
+        "id": 54,
         "name": "Crossbody Tokorozawa",
         "brand": "discord Yohji Yamamoto",
         "category": "Bolsos",
@@ -1788,7 +1788,7 @@
         }
     },
     {
-        "id": 79,
+        "id": 55,
         "name": "Crossbody Kawagoe",
         "brand": "discord Yohji Yamamoto",
         "category": "Bolsos",
@@ -1810,7 +1810,7 @@
         }
     },
     {
-        "id": 80,
+        "id": 56,
         "name": "Mini Kochi",
         "brand": "discord Yohji Yamamoto",
         "category": "Bolsos",
@@ -1832,7 +1832,7 @@
         }
     },
     {
-        "id": 81,
+        "id": 57,
         "name": "Mini Takamatsu",
         "brand": "discord Yohji Yamamoto",
         "category": "Bolsos",
@@ -1855,7 +1855,7 @@
         }
     },
     {
-        "id": 82,
+        "id": 58,
         "name": "Tote Toyama",
         "brand": "discord Yohji Yamamoto",
         "category": "Bolsos",
@@ -1876,7 +1876,7 @@
         }
     },
     {
-        "id": 83,
+        "id": 59,
         "name": "Tote Akita",
         "brand": "discord Yohji Yamamoto",
         "category": "Bolsos",
@@ -1898,7 +1898,7 @@
         }
     },
     {
-        "id": 84,
+        "id": 60,
         "name": "Tote Koshigaya",
         "brand": "discord Yohji Yamamoto",
         "category": "Bolsos",
@@ -1920,7 +1920,7 @@
         }
     },
     {
-        "id": 85,
+        "id": 61,
         "name": "Tote Miyazaki",
         "brand": "discord Yohji Yamamoto",
         "category": "Bolsos",

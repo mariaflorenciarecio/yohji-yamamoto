@@ -7,11 +7,12 @@ import FeaturedProducts from './FeaturedProducts'
 import Filters from './Filters'
 import Footer from './Footer'
 import Hero from './Hero'
+import Item from './Item'
+import ItemDetail from './ItemDetail'
+import ItemList from './ItemList'
 import Loading from './Loading'
 import Navbar from './Navbar'
 import PageHero from './PageHero'
-import Product from './Product'
-import ProductList from './ProductList'
 import Services from './Services'
 import Sidebar from './Sidebar'
 import Sort from './Sort'
@@ -28,11 +29,12 @@ export {
   Filters,
   Footer,
   Hero,
+  Item,
+  ItemDetail,
+  ItemList,
   Loading,
   Navbar,
   PageHero,
-  Product,
-  ProductList,
   Services,
   Sidebar,
   Sort,

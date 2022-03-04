@@ -1,11 +1,10 @@
-import { PageHero } from "../components"
-import ItemListContainer from "../components/ItemListContainer"
+import { Filters, ItemList } from '../components'
 
 const HomePage = () => {
   return (
     <>
-      <h1>HomePage</h1>
-      <ItemListContainer />
+      <Filters></Filters>
+      <ItemList></ItemList>
     </>
   )
 }
