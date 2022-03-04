@@ -10,7 +10,7 @@ import Hero from './Hero'
 import Loading from './Loading'
 import Navbar from './Navbar'
 import PageHero from './PageHero'
-import ProductImages from './ProductImages'
+import Product from './Product'
 import ProductList from './ProductList'
 import Services from './Services'
 import Sidebar from './Sidebar'
@@ -31,7 +31,7 @@ export {
   Loading,
   Navbar,
   PageHero,
-  ProductImages,
+  Product,
   ProductList,
   Services,
   Sidebar,
