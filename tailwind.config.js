@@ -3,10 +3,15 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        body: ['Montserrat']
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
     require('tailwind-scrollbar'),
+    require('@tailwindcss/forms'),
   ],
 }

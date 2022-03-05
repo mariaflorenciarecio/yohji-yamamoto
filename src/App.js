@@ -1,16 +1,41 @@
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
-import Item from './components/Item'
-import ItemList from './components/ItemList';
+import { 
+  BrowserRouter, 
+  Routes, 
+  Route, 
+} from 'react-router-dom'
+
+import { 
+  Navbar, 
+  Sidebar, 
+  Footer,
+} from './components'
+
+import {  
+  CartPage, 
+  CheckoutPage, 
+  ErrorPage, 
+  HomePage, 
+  ItemDetailPage,
+  ItemListPage,
+  PrivateRoute, 
+} from './pages'
 
 function App() {
-
   return (
-    <div className="App">
-      <NavBar></NavBar>
-      <ItemListContainer></ItemListContainer>
-    </div>
-  );
+    <BrowserRouter>
+      <Navbar />
+      <Sidebar />
+      <Routes>
+        <Route path='/' element={<ItemListPage />} />
+        <Route path='/category/:categoryId' element={<ItemListPage />} />
+        <Route path='/item/:itemId' element={<ItemDetailPage />} />
+        <Route path='/cart' element={<CartPage />} />
+        <Route path='/checkout' element={<CheckoutPage />} />
+        <Route path='*' element={<ErrorPage />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

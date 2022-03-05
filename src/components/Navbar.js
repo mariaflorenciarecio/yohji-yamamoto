@@ -1,4 +1,5 @@
 import { Fragment, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { MenuIcon, UserCircleIcon, XIcon } from '@heroicons/react/solid'
 import logo from '../assets/logo.png'
@@ -22,6 +23,7 @@ const navigation = {
                         { name: 'Chaquetas', href: '#' },
                         { name: 'Hoodies', href: '#' },
                         { name: 'Faldas', href: '#' },
+                        { name: 'Jumpsuits', href: '#' },
                         { name: 'Pantalones', href: '#' },
                         { name: 'Remeras', href: '#' },
                         { name: 'Sweaters', href: '#' },
@@ -40,7 +42,6 @@ const navigation = {
                     name: 'Bolsos',
                     items: [
                         { name: 'Backpack', href: '#' },
-                        { name: 'Clutch', href: '#' },
                         { name: 'Crossbody', href: '#' },
                         { name: 'Mini', href: '#' },
                         { name: 'Tote', href: '#' },
@@ -55,14 +56,14 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const NavBar = () => {
+const Navbar = () => {
     const [open, setOpen] = useState(false)
 
     return (
-        <div className="bg-white">
-
+        <div className="bg-white font-body">
+            
             {/* MENÚ PARA DISPOSITIVOS PEQUEÑOS */}
-            <Transition.Root show={open} as={Fragment}>
+            {/* <Transition.Root show={open} as={Fragment}>
                 <Dialog 
                     as="div" 
                     className="fixed inset-0 flex z-40 lg:hidden" 
@@ -89,10 +90,10 @@ const NavBar = () => {
                         leaveFrom="translate-x-0"
                         leaveTo="-translate-x-full"
                     >
-                        <div className="relative max-w-xs w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto">
+                        <div className="relative max-w-xs w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto"> */}
 
                             {/* Botón para cerrar el menú */}
-                            <div className="px-6 pt-6 flex bg-black">
+                            {/* <div className="px-6 pt-6 flex bg-black">
                                 <button
                                     type="button"
                                     className="-m-2 p-2 inline-flex text-white"
@@ -101,20 +102,20 @@ const NavBar = () => {
                                     <span className="sr-only">Cerrar menú</span>
                                     <XIcon className="h-6 w-6" aria-hidden="true" />
                                 </button>
-                            </div>
+                            </div> */}
 
                             {/* Enlaces */}
-                            <Tab.Group as="div">
+                            {/* <Tab.Group as="div"> */}
 
                                 {/* Iniciar sesión / Crear cuenta */}
-                                <div className="flow-root bg-black">
+                                {/* <div className="flow-root bg-black">
                                     <a href="#" className="pl-7 py-6 block font-light text-white">
                                         Iniciar sesión / Crear cuenta
                                     </a>
-                                </div>
+                                </div> */}
 
                                 {/* Categorías */}
-                                <Tab.List className="-mb-px flex">
+                                {/* <Tab.List className="-mb-px flex">
                                     {navigation.categories.map((category) => (
                                         <Tab
                                             key={category.name}
@@ -128,10 +129,10 @@ const NavBar = () => {
                                             {category.name}
                                         </Tab>
                                     ))}
-                                </Tab.List>
+                                </Tab.List> */}
 
                                 {/* Secciones */}
-                                <Tab.Panels as={Fragment}>
+                                {/* <Tab.Panels as={Fragment}>
                                     {navigation.categories.map((category) => (
                                         <Tab.Panel key={category.name} className="px-6 py-6 space-y-10">
                                             {category.sections.map((section) => (
@@ -161,7 +162,7 @@ const NavBar = () => {
                         </div>
                     </Transition.Child>
                 </Dialog>
-            </Transition.Root>
+            </Transition.Root> */}
 
             {/* MENÚ PARA DISPOSITIVOS GRANDES */}
             <header className="relative">
@@ -183,14 +184,19 @@ const NavBar = () => {
                         <MenuIcon className="h-5 w-5" aria-hidden="true" />
                     </button>
 
+                    <div className="flex flex-row gap-6 items-end">
+                        <span><Link to='/category/indumentaria'>Indumentaria</Link></span>
+                        <span><Link to='/category/bolsos'>Bolsos</Link></span>
+                    </div>
                     {/* Container de submenú */}
-                    <Popover.Group className="hidden lg:block z-10">
+                    {/* <Popover.Group className="hidden lg:block z-10">
                         <div className="h-full flex space-x-8">
                             {navigation.categories.map((category) => (
                                 <Popover key={category.name} className="flex">
                                     {({ open }) => (
-                                        <>
+                                        <> */}
                                             {/* Botón de categoría para abrir submenú en dispositivos grandes */}
+                                            {/* <Link to="/category/bolsos">
                                             <Popover.Button
                                                 className={classNames(
                                                     open
@@ -201,6 +207,7 @@ const NavBar = () => {
                                             >
                                                 {category.name}
                                             </Popover.Button>
+                                            </Link>
                                             
                                             <Transition
                                                 as={Fragment}
@@ -210,9 +217,9 @@ const NavBar = () => {
                                                 leave="transition ease-in duration-150"
                                                 leaveFrom="opacity-100"
                                                 leaveTo="opacity-0"
-                                            >
+                                            > */}
                                                 {/* Submenú con sección e items */}
-                                                <Popover.Panel className="absolute top-full inset-x-0 text-sm text-black">
+                                                {/* <Popover.Panel className="absolute top-full inset-x-0 text-sm text-black">
                                                     <div className="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true" />
                                                     <div className="relative bg-white">
                                                         {category.sections.map((section) => (
@@ -243,27 +250,23 @@ const NavBar = () => {
                                 </Popover>
                             ))}
                         </div>
-                    </Popover.Group>
+                    </Popover.Group> */}
 
                     {/* Logo */}
-                    <div className="m-auto">
-                        <a href="#" className="text-black">
-                            <span className="sr-only">THE SHOP Yohji Yamamoto</span>
-                            <img
-                                className="aspect-auto h-10 object-contain"
-                                src={logo}
-                                alt="Logo THE SHOP Yohji Yamamoto."
-                            />
-                        </a>
-                    </div>
+                    <Link to='/' className="m-auto">
+                        <img
+                            className="aspect-auto h-10 object-contain"
+                            src={logo}
+                            alt="Logo THE SHOP Yohji Yamamoto."
+                        />
+                    </Link>
 
                     {/* Iconos */}
-                    <div className="flex flex-row items-center justify-end text-black">
+                    <div className="flex flex-row items-center justify-end">
 
                         {/* Iniciar sesión / Crear cuenta */}
                         <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end">
                             <a href="#">
-                                <span className="sr-only">Usuario</span>
                                 <UserCircleIcon className="w-5 h-5" aria-hidden="true" />
                             </a>  
                         </div>
@@ -280,4 +283,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default Navbar
