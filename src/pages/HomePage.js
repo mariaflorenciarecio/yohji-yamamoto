@@ -1,10 +1,7 @@
-import { Filters, ItemList } from '../components'
-
 const HomePage = () => {
   return (
     <>
-      <Filters></Filters>
-      <ItemList></ItemList>
+      <h1>Soy el home</h1>
     </>
   )
 }

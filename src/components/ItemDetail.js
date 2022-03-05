@@ -1,4 +1,6 @@
-const ItemDetail = ({item: filteredItem}) => {
+import { Link } from "react-router-dom"
+
+const ItemDetail = ({item: filteredItem, item: item}) => {
   
   return (
     <>
@@ -6,9 +8,8 @@ const ItemDetail = ({item: filteredItem}) => {
       <h1>{filteredItem.name}</h1>
       <p>{filteredItem.price}</p>
       <p>{filteredItem.brand}</p>
-      <p>{filteredItem.category}</p>
+      <Link to={`/category/${item.category.toLowerCase()}`}>{filteredItem.category}</Link>
       <p>{filteredItem.color}</p>
-      <p>{filteredItem.sizes.map(s => s.size)}</p>
       <p>Descripción: {filteredItem.details.description}</p>
       <p>Composición: {filteredItem.details.composition}</p>
       <p>Cuidado: {filteredItem.details.care}</p>

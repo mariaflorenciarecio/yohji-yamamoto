@@ -1,25 +1,29 @@
 import { useEffect, useState } from 'react'
 import Item from './Item'
 
-const ItemList = () => {
+const url = 'https://run.mocky.io/v3/7d0e661d-7fbe-41cf-8105-bc8b9f4374d1'
 
-    const url = 'https://run.mocky.io/v3/7d0e661d-7fbe-41cf-8105-bc8b9f4374d1'
+const ItemList = ({category: categoryId}) => {
 
     const [items, setItems] = useState([])
+
+    useEffect(() => {
+        getItems()
+    }, [categoryId])
 
     const getItems = async () => {
         try {
             const response = await fetch(url)
             const data = await response.json()
-            setItems(data)
+            if (categoryId) {
+                setItems(data.filter(items => items.category.toLowerCase() == categoryId))
+            } else {
+                setItems(data)
+            }
         } catch (error) {
             console.log(error);
         }
     }
-
-    useEffect(() => {
-        getItems()
-    }, [])
 
 
     return (

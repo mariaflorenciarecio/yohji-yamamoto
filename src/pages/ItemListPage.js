@@ -1,11 +1,13 @@
-import { Filters, ItemList } from '../components'
+import { useParams } from 'react-router-dom';
+import { ItemList } from '../components'
 
 const ItemListPage = () => {
 
+        const {categoryId} = useParams()
+
         return (
                 <>
-                        <Filters></Filters>
-                        <ItemList></ItemList>
+                        <ItemList category={categoryId}></ItemList>
                 </>
         )
 }

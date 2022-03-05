@@ -61,9 +61,9 @@ const Navbar = () => {
 
     return (
         <div className="bg-white font-body">
-
+            
             {/* MENÚ PARA DISPOSITIVOS PEQUEÑOS */}
-            <Transition.Root show={open} as={Fragment}>
+            {/* <Transition.Root show={open} as={Fragment}>
                 <Dialog 
                     as="div" 
                     className="fixed inset-0 flex z-40 lg:hidden" 
@@ -90,10 +90,10 @@ const Navbar = () => {
                         leaveFrom="translate-x-0"
                         leaveTo="-translate-x-full"
                     >
-                        <div className="relative max-w-xs w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto">
+                        <div className="relative max-w-xs w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto"> */}
 
                             {/* Botón para cerrar el menú */}
-                            <div className="px-6 pt-6 flex bg-black">
+                            {/* <div className="px-6 pt-6 flex bg-black">
                                 <button
                                     type="button"
                                     className="-m-2 p-2 inline-flex text-white"
@@ -102,39 +102,37 @@ const Navbar = () => {
                                     <span className="sr-only">Cerrar menú</span>
                                     <XIcon className="h-6 w-6" aria-hidden="true" />
                                 </button>
-                            </div>
+                            </div> */}
 
                             {/* Enlaces */}
-                            <Tab.Group as="div">
+                            {/* <Tab.Group as="div"> */}
 
                                 {/* Iniciar sesión / Crear cuenta */}
-                                <div className="flow-root bg-black">
+                                {/* <div className="flow-root bg-black">
                                     <a href="#" className="pl-7 py-6 block font-light text-white">
                                         Iniciar sesión / Crear cuenta
                                     </a>
-                                </div>
+                                </div> */}
 
                                 {/* Categorías */}
-                                <Tab.List className="-mb-px flex">
+                                {/* <Tab.List className="-mb-px flex">
                                     {navigation.categories.map((category) => (
-                                        <Link to={`/category/${category}`}>
-                                            <Tab
-                                                key={category.name}
-                                                className={({ selected }) =>
-                                                    classNames(
-                                                        selected ? 'text-black border-black' : 'text-black border-transparent',
-                                                        'flex-1 pb-6 pt-6 border-b-2 font-medium text-xs'
-                                                    )
-                                                }
-                                            >
-                                                {category.name}
-                                            </Tab>
-                                        </Link>
+                                        <Tab
+                                            key={category.name}
+                                            className={({ selected }) =>
+                                                classNames(
+                                                    selected ? 'text-black border-black' : 'text-black border-transparent',
+                                                    'flex-1 pb-6 pt-6 border-b-2 font-medium text-xs'
+                                                )
+                                            }
+                                        >
+                                            {category.name}
+                                        </Tab>
                                     ))}
-                                </Tab.List>
+                                </Tab.List> */}
 
                                 {/* Secciones */}
-                                <Tab.Panels as={Fragment}>
+                                {/* <Tab.Panels as={Fragment}>
                                     {navigation.categories.map((category) => (
                                         <Tab.Panel key={category.name} className="px-6 py-6 space-y-10">
                                             {category.sections.map((section) => (
@@ -164,7 +162,7 @@ const Navbar = () => {
                         </div>
                     </Transition.Child>
                 </Dialog>
-            </Transition.Root>
+            </Transition.Root> */}
 
             {/* MENÚ PARA DISPOSITIVOS GRANDES */}
             <header className="relative">
@@ -186,14 +184,19 @@ const Navbar = () => {
                         <MenuIcon className="h-5 w-5" aria-hidden="true" />
                     </button>
 
+                    <div className="flex flex-row gap-6 items-end">
+                        <span><Link to='/category/indumentaria'>Indumentaria</Link></span>
+                        <span><Link to='/category/bolsos'>Bolsos</Link></span>
+                    </div>
                     {/* Container de submenú */}
-                    <Popover.Group className="hidden lg:block z-10">
+                    {/* <Popover.Group className="hidden lg:block z-10">
                         <div className="h-full flex space-x-8">
                             {navigation.categories.map((category) => (
                                 <Popover key={category.name} className="flex">
                                     {({ open }) => (
-                                        <>
+                                        <> */}
                                             {/* Botón de categoría para abrir submenú en dispositivos grandes */}
+                                            {/* <Link to="/category/bolsos">
                                             <Popover.Button
                                                 className={classNames(
                                                     open
@@ -204,6 +207,7 @@ const Navbar = () => {
                                             >
                                                 {category.name}
                                             </Popover.Button>
+                                            </Link>
                                             
                                             <Transition
                                                 as={Fragment}
@@ -213,9 +217,9 @@ const Navbar = () => {
                                                 leave="transition ease-in duration-150"
                                                 leaveFrom="opacity-100"
                                                 leaveTo="opacity-0"
-                                            >
+                                            > */}
                                                 {/* Submenú con sección e items */}
-                                                <Popover.Panel className="absolute top-full inset-x-0 text-sm text-black">
+                                                {/* <Popover.Panel className="absolute top-full inset-x-0 text-sm text-black">
                                                     <div className="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true" />
                                                     <div className="relative bg-white">
                                                         {category.sections.map((section) => (
@@ -246,7 +250,7 @@ const Navbar = () => {
                                 </Popover>
                             ))}
                         </div>
-                    </Popover.Group>
+                    </Popover.Group> */}
 
                     {/* Logo */}
                     <Link to='/' className="m-auto">

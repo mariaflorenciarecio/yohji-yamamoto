@@ -1,17 +1,17 @@
-import Cart from './CartPage'
-import Checkout from './CheckoutPage'
-import Error from './ErrorPage'
-import Home from './HomePage'
-import ItemDetail from './ItemDetailPage'
-import ItemList from './ItemListPage'
+import CartPage from './CartPage'
+import CheckoutPage from './CheckoutPage'
+import ErrorPage from './ErrorPage'
+import HomePage from './HomePage'
+import ItemDetailPage from './ItemDetailPage'
+import ItemListPage from './ItemListPage'
 import PrivateRoute from './PrivateRoute'
 
 export {
-  Cart,
-  Checkout,
-  Error,
-  Home,
-  ItemDetail,
-  ItemList,
+  CartPage,
+  CheckoutPage,
+  ErrorPage,
+  HomePage,
+  ItemDetailPage,
+  ItemListPage,
   PrivateRoute,
 }
