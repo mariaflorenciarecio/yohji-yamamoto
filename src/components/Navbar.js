@@ -185,8 +185,8 @@ const Navbar = () => {
                     </button>
 
                     <div className="flex flex-row gap-6 items-end">
-                        <span><Link to='/category/indumentaria'>Indumentaria</Link></span>
-                        <span><Link to='/category/bolsos'>Bolsos</Link></span>
+                        <span><Link to='/yohji-yamamoto/category/indumentaria'>Indumentaria</Link></span>
+                        <span><Link to='/yohji-yamamoto/category/bolsos'>Bolsos</Link></span>
                     </div>
                     {/* Container de submenú */}
                     {/* <Popover.Group className="hidden lg:block z-10">
@@ -196,7 +196,7 @@ const Navbar = () => {
                                     {({ open }) => (
                                         <> */}
                                             {/* Botón de categoría para abrir submenú en dispositivos grandes */}
-                                            {/* <Link to="/category/bolsos">
+                                            {/* <Link to="/yohji-yamamoto/category/bolsos">
                                             <Popover.Button
                                                 className={classNames(
                                                     open
@@ -253,7 +253,7 @@ const Navbar = () => {
                     </Popover.Group> */}
 
                     {/* Logo */}
-                    <Link to='/' className="m-auto">
+                    <Link to='/yohji-yamamoto' className="m-auto">
                         <img
                             className="aspect-auto h-10 object-contain"
                             src={logo}
