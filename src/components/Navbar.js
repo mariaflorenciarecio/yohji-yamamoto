@@ -117,17 +117,19 @@ const Navbar = () => {
                                 {/* Categorías */}
                                 <Tab.List className="-mb-px flex">
                                     {navigation.categories.map((category) => (
-                                        <Tab
-                                            key={category.name}
-                                            className={({ selected }) =>
-                                                classNames(
-                                                    selected ? 'text-black border-black' : 'text-black border-transparent',
-                                                    'flex-1 pb-6 pt-6 border-b-2 font-medium text-xs'
-                                                )
-                                            }
-                                        >
-                                            {category.name}
-                                        </Tab>
+                                        <Link to={`/category/${category}`}>
+                                            <Tab
+                                                key={category.name}
+                                                className={({ selected }) =>
+                                                    classNames(
+                                                        selected ? 'text-black border-black' : 'text-black border-transparent',
+                                                        'flex-1 pb-6 pt-6 border-b-2 font-medium text-xs'
+                                                    )
+                                                }
+                                            >
+                                                {category.name}
+                                            </Tab>
+                                        </Link>
                                     ))}
                                 </Tab.List>
 

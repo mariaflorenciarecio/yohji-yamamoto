@@ -10,8 +10,8 @@ const ItemList = () => {
     const getItems = async () => {
         try {
             const response = await fetch(url)
-            const items = await response.json()
-            setItems(items)
+            const data = await response.json()
+            setItems(data)
         } catch (error) {
             console.log(error);
         }
@@ -25,8 +25,8 @@ const ItemList = () => {
     return (
         <>
             <div className="grid grid-cols-1 gap-y-4 gap-x-4 sm:grid-cols-2 lg:grid-cols-4">
-                {items.map((i) => (
-                    <Item key={i.id} item={i}></Item>
+                {items.map((item) => (
+                    <Item key={item.id} item={item}></Item>
                 ))}
             </div>
         </>
