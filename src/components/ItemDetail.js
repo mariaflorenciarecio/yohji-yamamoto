@@ -8,7 +8,7 @@ const ItemDetail = ({item: filteredItem, item: item}) => {
       <h1>{filteredItem.name}</h1>
       <p>{filteredItem.price}</p>
       <p>{filteredItem.brand}</p>
-      <Link to={`/category/${item.category.toLowerCase()}`}>{filteredItem.category}</Link>
+      <Link to={`/yohji-yamamoto/category/${item.category.toLowerCase()}`}>{filteredItem.category}</Link>
       <p>{filteredItem.color}</p>
       <p>Descripción: {filteredItem.details.description}</p>
       <p>Composición: {filteredItem.details.composition}</p>

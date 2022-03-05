@@ -23,12 +23,12 @@ const Item = ({item: item}) => {
                 {/* Descripción */}
                 <div className="flex flex-col justify-start p-3">
                     <h3 to={`/products/${item.id}`} className="text-sm text-neutral-600">
-                        <Link to={`/item/${item.id}`}>
+                        <Link to={`/yohji-yamamoto/item/${item.id}`}>
                             {item.name}
                         </Link>
                     </h3>
                     <p className="text-sm text-neutral-400 pt-2 tracking-widest">
-                        <Link to={`/item/${item.id}`}>
+                        <Link to={`/yohji-yamamoto/item/${item.id}`}>
                             {item.price}
                         </Link>
                     </p>
@@ -36,7 +36,7 @@ const Item = ({item: item}) => {
 
                 {/* Botones */}
                 <div className="cursor-pointer">
-                    <Link to={`/item/${item.id}`}>
+                    <Link to={`/yohji-yamamoto/item/${item.id}`}>
                         <EyeIcon className="absolute group-hover:right-3 delay-100 w-8 p-1.5 hover:bg-neutral-600 hover:text-white duration-500 right-[-60px] top-3 bg-white text-neutral-600" />
                     </Link>
                     <HeartIcon className="absolute group-hover:right-3 delay-300 w-8 p-1.5 hover:bg-neutral-600 hover:text-white duration-500 right-[-60px] top-[58px] bg-white text-neutral-600" />

@@ -26,11 +26,11 @@ function App() {
       <Navbar />
       <Sidebar />
       <Routes>
-        <Route path='/' element={<ItemListPage />} />
-        <Route path='/category/:categoryId' element={<ItemListPage />} />
-        <Route path='/item/:itemId' element={<ItemDetailPage />} />
-        <Route path='/cart' element={<CartPage />} />
-        <Route path='/checkout' element={<CheckoutPage />} />
+        <Route path='/yohji-yamamoto' element={<ItemListPage />} />
+        <Route path='/yohji-yamamoto/category/:categoryId' element={<ItemListPage />} />
+        <Route path='/yohji-yamamoto/item/:itemId' element={<ItemDetailPage />} />
+        <Route path='/yohji-yamamoto/cart' element={<CartPage />} />
+        <Route path='/yohji-yamamoto/checkout' element={<CheckoutPage />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
       <Footer />
