@@ -24,7 +24,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Sidebar />
+      {/* <Sidebar /> */}
       <Routes>
         <Route path='/yohji-yamamoto' element={<ItemListPage />} />
         <Route path='/yohji-yamamoto/category/:categoryId' element={<ItemListPage />} />

@@ -169,7 +169,7 @@ const Navbar = () => {
 
                 {/* Mensaje destacado */}
                 <p className="bg-black h-10 flex items-center justify-center text-sm font-light text-white px-4 sm:px-6 lg:px-8 uppercase">
-                    Envío gratis para compras superiores a $100.00
+                    50% de descuento ingresando el código AW22 | Envíos, cambios y devoluciones gratis
                 </p>
                 
                 {/* Navbar */}
