@@ -1,5 +1,5 @@
-import { HeartIcon } from "@heroicons/react/solid";
 import React, { useState } from "react";
+import { HeartIcon } from "@heroicons/react/solid";
 
 const ItemDetail = ({ item: filteredItem }) => {
 
@@ -29,33 +29,21 @@ const ItemDetail = ({ item: filteredItem }) => {
   };
 
   return (
-    <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4 selection:bg-gray-600 selection:text-white">
+    <div className="selection:bg-gray-600 selection:text-white">
 
       {/* Breadcrums */}
-      <p className={"my-8 lowercase " + (styles.text)}>Home — {filteredItem.brand} — {filteredItem.category} — {filteredItem.product} — <strong className="text-gray-800">{filteredItem.name}</strong></p>
+      <p className={"mb-2 ml-10 lowercase hidden lg:flex  " + (styles.text)}>inicio — colección — {filteredItem.category} — {filteredItem.name}</p>
 
       {/* Imágenes y detalles */}
-      <div className="flex justify-center items-center lg:flex-row flex-col gap-8">
+      <div className="flex flex-col lg:flex-row max-w-full lg:max-w-7xl mx-auto justify-center items-center lg:items-start">
 
         {/* Imágenes */}
-        <div className=" w-full sm:w-96 md:w-8/12  lg:w-6/12 flex lg:flex-row flex-col lg:gap-8 sm:gap-6 gap-4">
-        <div className=" w-full lg:w-4/12 grid lg:grid-cols-1 sm:grid-cols-4 grid-cols-2 gap-6">
-            <div className="bg-gray-100 flex justify-center items-center py-4">
-              <img src="https://i.ibb.co/0jX1zmR/sam-moqadam-kvmds-Tr-GOBM-unsplash-removebg-preview-1-1.png" alt="Wooden chair - preview 1" />
-            </div>
-            <div className="bg-gray-100 flex justify-center items-center py-4">
-              <img src="https://i.ibb.co/7zv1N5Q/sam-moqadam-kvmds-Tr-GOBM-unsplash-removebg-preview-2.png" alt="Wooden chair - preview 2" />
-            </div>
-            <div className="bg-gray-100 flex justify-center items-center py-4">
-              <img src="https://i.ibb.co/0jX1zmR/sam-moqadam-kvmds-Tr-GOBM-unsplash-removebg-preview-1-1.png" alt="Wooden chair- preview 3" />
-            </div>
-          </div>
-          <div className=" w-full lg:w-8/12 bg-gray-100 flex justify-center items-center">
-            <img src={filteredItem.imageSrc} alt={filteredItem.imageAlt} />
-          </div>
+        <div className="p-6 lg:w-1/2">
+          <img src={filteredItem.images.imgC} alt={filteredItem.name} />
         </div>
 
-        <div className="  w-full sm:w-96 md:w-8/12 lg:w-6/12 items-center">
+        {/* Detalles */}
+        <div className="p-6 lg:w-1/2">
 
           {/* Información */}
           <div className="flex flex-row justify-between items-end">
@@ -70,35 +58,35 @@ const ItemDetail = ({ item: filteredItem }) => {
           <p className={"mt-2 " + (styles.text)}>{filteredItem.details.description}</p>
           <hr className="border-gray-200 w-full mt-4" />
 
-            {/* Detalles del producto */}
-            <div>
-              <div className="flex flex-row justify-between items-center mt-4">
-                <h2 className={styles.highlight}>Detalles del producto</h2>
-                <button aria-label="too" className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white" onClick={() => setShow1(!show1)}>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path className={show1 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#303030" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M4.16602 10H15.8327" stroke="#303030" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </button>
-              </div>
-              <p className={(styles.text) + " mt-2 w-11/12 lowercase " + (show1 ? "block" : "hidden")}>composición: {filteredItem.details.composition} — cuidados: {filteredItem.details.care}</p>
+          {/* Detalles del producto */}
+          <div>
+            <div className="flex flex-row justify-between items-center mt-4">
+              <h2 className={styles.highlight}>Detalles del producto</h2>
+              <button aria-label="too" className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white" onClick={() => setShow1(!show1)}>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path className={show1 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#303030" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M4.16602 10H15.8327" stroke="#303030" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
             </div>
-            <hr className="border-gray-200 w-full mt-4" />
+            <p className={(styles.text) + " mt-2 w-11/12 lowercase " + (show1 ? "block" : "hidden")}>composición: {filteredItem.details.composition} — cuidados: {filteredItem.details.care}</p>
+          </div>
+          <hr className="border-gray-200 w-full mt-4" />
 
-            {/* Beneficios exclusivos */}
-            <div>
-              <div className="flex flex-row justify-between items-center mt-4">
-                <h2 className={styles.highlight}>Beneficios exclusivos</h2>
-                <button aria-label="too" className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white" onClick={() => setShow2(!show2)}>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path className={show2 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#303030" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M4.16602 10H15.8327" stroke="#303030" strokeWidth="" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </button>
-              </div>
-              <p className={(styles.text) + " mt-2 w-11/12 lowercase " + (show2 ? "block" : "hidden")}>Envíos, cambios y devoluciones gratis — 3, 6 y 12 cuotas sin interés — Servicio pick up</p>
+          {/* Beneficios exclusivos */}
+          <div>
+            <div className="flex flex-row justify-between items-center mt-4">
+              <h2 className={styles.highlight}>Beneficios exclusivos</h2>
+              <button aria-label="too" className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white" onClick={() => setShow2(!show2)}>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path className={show2 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#303030" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M4.16602 10H15.8327" stroke="#303030" strokeWidth="" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
             </div>
-            <hr className="border-gray-200 w-full mt-4" />
+            <p className={(styles.text) + " mt-2 w-11/12 lowercase " + (show2 ? "block" : "hidden")}>Envíos, cambios y devoluciones gratis — 3, 6 y 12 cuotas sin interés — Servicio pick up</p>
+          </div>
+          <hr className="border-gray-200 w-full mt-4" />
 
           <div className="mt-8">
 

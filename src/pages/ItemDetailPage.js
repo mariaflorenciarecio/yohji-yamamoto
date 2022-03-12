@@ -6,7 +6,7 @@ const ItemDetailPage = () => {
 
   const {itemId} = useParams()
 
-    const url = 'https://run.mocky.io/v3/7d0e661d-7fbe-41cf-8105-bc8b9f4374d1'
+    const url = 'https://run.mocky.io/v3/b97f915f-b6e0-4388-8955-90ccdb683f07'
 
     const [items, setItems] = useState([])
 

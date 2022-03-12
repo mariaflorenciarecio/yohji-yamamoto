@@ -27,7 +27,8 @@ function App() {
       {/* <Sidebar /> */}
       <Routes>
         <Route path='/yohji-yamamoto' element={<ItemListPage />} />
-        <Route path='/yohji-yamamoto/category/:categoryId' element={<ItemListPage />} />
+        <Route path='/yohji-yamamoto/invierno-22' element={<ItemListPage />} />
+        <Route path='/yohji-yamamoto/invierno-22/:categoryId' element={<ItemListPage />} />
         <Route path='/yohji-yamamoto/item/:itemId' element={<ItemDetailPage />} />
         <Route path='/yohji-yamamoto/cart' element={<CartPage />} />
         <Route path='/yohji-yamamoto/checkout' element={<CheckoutPage />} />
