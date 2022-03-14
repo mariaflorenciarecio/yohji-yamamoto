@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/yohji-yamamoto/static/css/main.35f639e7.css",
-    "main.js": "/yohji-yamamoto/static/js/main.f42d2520.js",
-    "static/media/logo.png": "/yohji-yamamoto/static/media/logo.b29a63e1e7e79fd2e992.png",
+    "main.css": "/yohji-yamamoto/static/css/main.4bdb8cae.css",
+    "main.js": "/yohji-yamamoto/static/js/main.09c3d8fa.js",
     "index.html": "/yohji-yamamoto/index.html",
-    "main.35f639e7.css.map": "/yohji-yamamoto/static/css/main.35f639e7.css.map",
-    "main.f42d2520.js.map": "/yohji-yamamoto/static/js/main.f42d2520.js.map"
+    "main.4bdb8cae.css.map": "/yohji-yamamoto/static/css/main.4bdb8cae.css.map",
+    "main.09c3d8fa.js.map": "/yohji-yamamoto/static/js/main.09c3d8fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.35f639e7.css",
-    "static/js/main.f42d2520.js"
+    "static/css/main.4bdb8cae.css",
+    "static/js/main.09c3d8fa.js"
   ]
 }
