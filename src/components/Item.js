@@ -29,13 +29,13 @@ const Item = ({item}) => {
 
                 {/* Descripción */}
                 <div className="flex flex-col justify-start p-3">
-                    <h3 to={`/products/${item.id}`} className={styles.name}>
-                        <Link to={`/yohji-yamamoto/item/${item.id}`}>
+                    <h3 className={styles.name}>
+                        <Link to={`/item/${item.id}`}>
                             {item.name}
                         </Link>
                     </h3>
                     <p className={styles.price}>
-                        <Link to={`/yohji-yamamoto/item/${item.id}`}>
+                        <Link to={`/item/${item.id}`}>
                             {item.price}
                         </Link>
                     </p>
@@ -43,7 +43,7 @@ const Item = ({item}) => {
 
                 {/* Botones */}
                 <div className="cursor-pointer">
-                    <Link to={`/yohji-yamamoto/item/${item.id}`}>
+                    <Link to={`/item/${item.id}`}>
                         <EyeIcon className={(styles.button) + " delay-100 top-3"} />
                     </Link>
                     <HeartIcon className={(styles.button) + " delay-300 top-[58px]"} />

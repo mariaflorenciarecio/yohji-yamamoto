@@ -1,5 +1,4 @@
 import AddToCart from './AddToCart'
-import CartContent from './CartContent'
 import CartButtons from './CartButtons'
 import Contact from './Contact'
 import Error from './Error'
@@ -21,7 +20,6 @@ import StripeCheckout from './StripeCheckout'
 
 export {
   AddToCart,
-  CartContent,
   CartButtons,
   Contact,
   Error,

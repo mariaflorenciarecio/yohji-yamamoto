@@ -30,7 +30,7 @@ function Navbar() {
                     <div className="flex items-center justify-between border-b border-gray-200 py-4 px-4">
 
                         {/* Logo */}
-                        <Link to='/yohji-yamamoto' className="block cursor-pointer w-60">
+                        <Link to='/' className="block cursor-pointer w-60">
                             <img src={logo} alt="Logo de la marca Yohji Yamamoto" className="fill-stroke text-gray-900 h-6" />
                         </Link>
                         
@@ -38,17 +38,17 @@ function Navbar() {
                         <div className="hidden lg:block">
                             <ul className="flex items-center space-x-6">
                                 <li>
-                                    <Link to="/yohji-yamamoto/invierno-22" className={(styles.highlight) + " focus:outline-none focus:ring-2 focus:ring-white"}>
+                                    <Link to='/' className={(styles.highlight) + " focus:outline-none focus:ring-2 focus:ring-white"}>
                                         Novedades
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/yohji-yamamoto/invierno-22" className={(styles.highlight) + " focus:outline-none focus:ring-2 focus:ring-white"} onMouseEnter={() => setShow1(!show1)}>
-                                        Invierno 22
+                                    <Link to="/collection" className={(styles.highlight) + " focus:outline-none focus:ring-2 focus:ring-white"} onMouseEnter={() => setShow1(!show1)}>
+                                        Colección
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/yohji-yamamoto/invierno-22" className={(styles.highlight) + " focus:outline-none focus:ring-2 focus:ring-white"}>
+                                    <Link to='/' className={(styles.highlight) + " focus:outline-none focus:ring-2 focus:ring-white"}>
                                         Esenciales
                                     </Link>
                                 </li>
@@ -56,22 +56,16 @@ function Navbar() {
                         </div>
 
                         {/* Iconos */}
-                        <div className="flex ml-auto lg:ml-0 items-center justify-end space-x-4 lg:w-60">
+                        <div className="flex ml-auto lg:ml-0 items-center justify-end space-x-5 lg:w-60">
 
                             {/* Usuario */}
-                            <a aria-label="my account" href="javascript:void(0)">
-                                <UserCircleIcon className={styles.icon} />
-                            </a>
+                            <UserCircleIcon className={styles.icon} />
 
                             {/* Wishlist */}
-                            <a aria-label="Favourites" href="javascript:void(0)">
-                                <WishlistWidget></WishlistWidget>
-                            </a>
+                            <WishlistWidget></WishlistWidget>
 
                             {/* Carrito */}
-                            <a aria-label="Bag" href="javascript:void(0)">
-                                <CartWidget></CartWidget>
-                            </a>
+                            <CartWidget></CartWidget>
 
                             {/* Toggle */}
                             <button aria-label="open close menu" onClick={() => setShowMenu(!showMenu)} className="lg:hidden focus:outline-none focus:ring-2 focus:ring-white">
@@ -82,16 +76,16 @@ function Navbar() {
 
                     {/* Enlaces secundarios */}
                     <ul className={(styles.button) + " flex justify-center py-4 space-x-3 border-b border-gray-200 font-normal " + (show1 ? "block" : "hidden")} onMouseLeave={() => setShow1(!show1)}>
-                        <li><Link to='/yohji-yamamoto/invierno-22/abrigos'>Abrigos</Link></li>
-                        <li><Link to='/yohji-yamamoto/invierno-22/blazers'>Blazers</Link></li>
-                        <li><Link to='/yohji-yamamoto/invierno-22/camisas'>Camisas</Link></li>
-                        <li><Link to='/yohji-yamamoto/invierno-22/chaquetas'>Chaquetas</Link></li>
-                        <li><Link to='/yohji-yamamoto/invierno-22/faldas'>Faldas</Link></li>
-                        <li><Link to='/yohji-yamamoto/invierno-22/jumpsuits'>Jumpsuits</Link></li>
-                        <li><Link to='/yohji-yamamoto/invierno-22/pantalones'>Pantalones</Link></li>
-                        <li><Link to='/yohji-yamamoto/invierno-22/remeras'>Remeras</Link></li>
-                        <li><Link to='/yohji-yamamoto/invierno-22/sweaters'>Sweaters</Link></li>
-                        <li><Link to='/yohji-yamamoto/invierno-22/vestidos'>Vestidos</Link></li>
+                        <li><Link to='/category/abrigos'>Abrigos</Link></li>
+                        <li><Link to='/category/blazers'>Blazers</Link></li>
+                        <li><Link to='/category/camisas'>Camisas</Link></li>
+                        <li><Link to='/category/chaquetas'>Chaquetas</Link></li>
+                        <li><Link to='/category/faldas'>Faldas</Link></li>
+                        <li><Link to='/category/jumpsuits'>Jumpsuits</Link></li>
+                        <li><Link to='/category/pantalones'>Pantalones</Link></li>
+                        <li><Link to='/category/remeras'>Remeras</Link></li>
+                        <li><Link to='/category/sweaters'>Sweaters</Link></li>
+                        <li><Link to='/category/vestidos'>Vestidos</Link></li>
                     </ul>
                 </div>
 
@@ -102,14 +96,14 @@ function Navbar() {
                     <div className="px-6 bg-white">
                         <ul className="flex flex-col space-y-4 pb-6">
                             <li className="border-b border-t border-gray-200 pb-4 px-1 pt-4 mt-4 flex items-center justify-between">
-                                <a href="javascript:void(0)" className={(styles.highlight) + "focus:outline-none focus:ring-2 focus:ring-white border-gray-200 uppercase"}>
+                                <Link to='/' className={(styles.highlight) + "focus:outline-none focus:ring-2 focus:ring-white border-gray-200 uppercase"}>
                                     Novedades
-                                </a>
+                                </Link>
                             </li>
                             <li className="border-b border-gray-200 pb-4 px-1 flex flex-col">
                                 <div className="flex flex-row items-center justify-between">
-                                    <Link to="/yohji-yamamoto/invierno-22" className={(styles.highlight) + "focus:outline-none focus:ring-2 focus:ring-white border-gray-200 uppercase"}>
-                                        Invierno 22
+                                    <Link to='/collection' className={(styles.highlight) + "focus:outline-none focus:ring-2 focus:ring-white border-gray-200 uppercase"}>
+                                        Colección
                                     </Link>
                                     <button aria-label="too" className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white" onClick={() => setShow2(!show2)}>
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -121,22 +115,22 @@ function Navbar() {
 
                                 {/* Enlaces secundarios */}
                                 <ul className={(styles.button) + " grid grid-cols-3 md:grid-cols-5 items-end mt-2 space-y-2 font-normal " + (show2 ? "block" : "hidden")}>
-                                    <li><Link to='/yohji-yamamoto/invierno-22/abrigos'>Abrigos</Link></li>
-                                    <li><Link to='/yohji-yamamoto/invierno-22/blazers'>Blazers</Link></li>
-                                    <li><Link to='/yohji-yamamoto/invierno-22/camisas'>Camisas</Link></li>
-                                    <li><Link to='/yohji-yamamoto/invierno-22/chaquetas'>Chaquetas</Link></li>
-                                    <li><Link to='/yohji-yamamoto/invierno-22/faldas'>Faldas</Link></li>
-                                    <li><Link to='/yohji-yamamoto/invierno-22/jumpsuits'>Jumpsuits</Link></li>
-                                    <li><Link to='/yohji-yamamoto/invierno-22/pantalones'>Pantalones</Link></li>
-                                    <li><Link to='/yohji-yamamoto/invierno-22/remeras'>Remeras</Link></li>
-                                    <li><Link to='/yohji-yamamoto/invierno-22/sweaters'>Sweaters</Link></li>
-                                    <li><Link to='/yohji-yamamoto/invierno-22/vestidos'>Vestidos</Link></li>
+                                    <li><Link to='/category/abrigos'>Abrigos</Link></li>
+                                    <li><Link to='/category/blazers'>Blazers</Link></li>
+                                    <li><Link to='/category/camisas'>Camisas</Link></li>
+                                    <li><Link to='/category/chaquetas'>Chaquetas</Link></li>
+                                    <li><Link to='/category/faldas'>Faldas</Link></li>
+                                    <li><Link to='/category/jumpsuits'>Jumpsuits</Link></li>
+                                    <li><Link to='/category/pantalones'>Pantalones</Link></li>
+                                    <li><Link to='/category/remeras'>Remeras</Link></li>
+                                    <li><Link to='/category/sweaters'>Sweaters</Link></li>
+                                    <li><Link to='/category/vestidos'>Vestidos</Link></li>
                                 </ul>
                             </li>
                             <li className="border-b border-gray-200 pb-4 px-1 flex items-center justify-between">
-                                <a href="javascript:void(0)" className={(styles.highlight) + "focus:outline-none focus:ring-2 focus:ring-white border-gray-200 uppercase"}>
+                                <Link to='/' className={(styles.highlight) + "focus:outline-none focus:ring-2 focus:ring-white border-gray-200 uppercase"}>
                                     Esenciales
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
