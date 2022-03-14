@@ -1,5 +1,5 @@
 import { 
-  BrowserRouter, 
+  HashRouter, 
   Routes, 
   Route, 
 } from 'react-router-dom'
@@ -22,12 +22,12 @@ import {
   PrivateRoute, 
 } from './pages'
 
-// ACLARACION: en BrowserRouter se agrega "basename" para el correcto funcionamiento de las rutas en GitHub Pages
+// ACLARACION: se utiliza HashRouter en vez de BrowserRouter para el correcto funcionamiento de las rutas en GitHub Pages
 
 function App() {
   return (
     <CartProvider>
-      <BrowserRouter basename={process.env.YOHJI_YAMAMOTO}>
+      <HashRouter basename={process.env.YOHJI_YAMAMOTO}>
         <Navbar />
         <Sidebar />
         <Routes>
@@ -40,7 +40,7 @@ function App() {
           <Route path='*' element={<ErrorPage />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </CartProvider>
   )
 }
