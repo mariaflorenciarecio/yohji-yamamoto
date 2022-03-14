@@ -1,5 +1,5 @@
 import { 
-  HashRouter, 
+  BrowserRouter, 
   Routes, 
   Route, 
 } from 'react-router-dom'
@@ -22,16 +22,14 @@ import {
   PrivateRoute, 
 } from './pages'
 
-// ACLARACION: se utiliza HashRouter en vez de BrowserRouter para el correcto funcionamiento de las rutas en GitHub Pages
-
 function App() {
   return (
     <CartProvider>
-      <HashRouter basename={process.env.YOHJI_YAMAMOTO}>
+      <BrowserRouter>
         <Navbar />
         <Sidebar />
         <Routes>
-          <Route path='/' element={<ItemListPage />} />
+          <Route index element={<ItemListPage />} />
           <Route path='collection' element={<ItemListPage />} />
           <Route path='category/:categoryId' element={<ItemListPage />} />
           <Route path='item/:itemId' element={<ItemDetailPage />} />
@@ -40,7 +38,7 @@ function App() {
           <Route path='*' element={<ErrorPage />} />
         </Routes>
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     </CartProvider>
   )
 }
