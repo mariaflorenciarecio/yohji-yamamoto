@@ -22,14 +22,16 @@ import {
   PrivateRoute, 
 } from './pages'
 
+// ACLARACION: en BrowserRouter se agrega "basename" para el correcto funcionamiento de las rutas en GitHub Pages
+
 function App() {
   return (
     <CartProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.YOHJI_YAMAMOTO}>
         <Navbar />
-        {/* <Sidebar /> */}
+        <Sidebar />
         <Routes>
-          <Route index element={<HomePage />} />
+          <Route path='/' element={<ItemListPage />} />
           <Route path='collection' element={<ItemListPage />} />
           <Route path='category/:categoryId' element={<ItemListPage />} />
           <Route path='item/:itemId' element={<ItemDetailPage />} />
