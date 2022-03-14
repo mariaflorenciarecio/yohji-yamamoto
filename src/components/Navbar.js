@@ -1,286 +1,143 @@
-import { Fragment, useState } from 'react'
+import React, { useState } from "react"
 import { Link } from 'react-router-dom'
-import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
-import { MenuIcon, UserCircleIcon, XIcon } from '@heroicons/react/solid'
 import logo from '../assets/logo.png'
-import WishlistWidget from './WishlistWidget'
-import CartWidget from './CartWidget'
+import { MenuIcon, UserCircleIcon } from "@heroicons/react/solid"
+import WishlistWidget from "./WishlistWidget"
+import CartWidget from "./CartWidget"
 
-const navigation = {
-    categories: [
-        {
-            id: 'yohji-yamamoto',
-            name: 'Yohji Yamamoto',
-            sections: [
-                {
-                    id: 'indumentaria',
-                    name: 'Indumentaria',
-                    items: [
-                        { name: 'Abrigos', href: '#' },
-                        { name: 'Blazers', href: '#' },
-                        { name: 'Camisas', href: '#' },
-                        { name: 'Cardigans', href: '#' },
-                        { name: 'Chaquetas', href: '#' },
-                        { name: 'Hoodies', href: '#' },
-                        { name: 'Faldas', href: '#' },
-                        { name: 'Jumpsuits', href: '#' },
-                        { name: 'Pantalones', href: '#' },
-                        { name: 'Remeras', href: '#' },
-                        { name: 'Sweaters', href: '#' },
-                        { name: 'Vestidos', href: '#' },
-                        
-                    ],
-                },
-            ],
-        },
-        {
-            id: 'discord',
-            name: 'discord Yohji Yamamoto',
-            sections: [
-                {
-                    id: 'bolsos',
-                    name: 'Bolsos',
-                    items: [
-                        { name: 'Backpack', href: '#' },
-                        { name: 'Crossbody', href: '#' },
-                        { name: 'Mini', href: '#' },
-                        { name: 'Tote', href: '#' },
-                    ],
-                },
-            ],
-        },
-    ],
-}
+function Navbar() {
 
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
+    const [showMenu, setShowMenu] = useState(false)
 
-const Navbar = () => {
-    const [open, setOpen] = useState(false)
+    const [show1, setShow1] = useState(false)
+    const [show2, setShow2] = useState(false)
+
+    const styles = {
+        text: "font-light text-sm text-gray-600 tracking-wide leading-normal",
+        highlight: "font-medium text-xs text-gray-700 tracking-wider leading-loose uppercase",
+        button: "font-medium text-xxs text-gray-700 tracking-wider leading-normal uppercase select-none",
+        icon: "w-5 h-5 text-gray-600"
+    }
 
     return (
-        <div className="bg-white font-body">
-            
-            {/* MENÚ PARA DISPOSITIVOS PEQUEÑOS */}
-            {/* <Transition.Root show={open} as={Fragment}>
-                <Dialog 
-                    as="div" 
-                    className="fixed inset-0 flex z-40 lg:hidden" 
-                    onClose={setOpen}
-                >
-                    <Transition.Child
-                        as={Fragment}
-                        enter="transition-opacity ease-linear duration-300"
-                        enterFrom="opacity-0"
-                        enterTo="opacity-100"
-                        leave="transition-opacity ease-linear duration-300"
-                        leaveFrom="opacity-100"
-                        leaveTo="opacity-0"
-                    >
-                        <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-25" />
-                    </Transition.Child>
+        <div className="bg-white">
+            <div className="mx-auto relative">
 
-                    <Transition.Child
-                        as={Fragment}
-                        enter="transition ease-in-out duration-300 transform"
-                        enterFrom="-translate-x-full"
-                        enterTo="translate-x-0"
-                        leave="transition ease-in-out duration-300 transform"
-                        leaveFrom="translate-x-0"
-                        leaveTo="-translate-x-full"
-                    >
-                        <div className="relative max-w-xs w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto"> */}
+                {/* Dispositivos grandes */}
+                <div className="pt-4 pb-6 mx-6">
 
-                            {/* Botón para cerrar el menú */}
-                            {/* <div className="px-6 pt-6 flex bg-black">
-                                <button
-                                    type="button"
-                                    className="-m-2 p-2 inline-flex text-white"
-                                    onClick={() => setOpen(false)}
-                                >
-                                    <span className="sr-only">Cerrar menú</span>
-                                    <XIcon className="h-6 w-6" aria-hidden="true" />
-                                </button>
-                            </div> */}
+                    {/* Parte superior */}
+                    <div className="flex items-center justify-between border-b border-gray-200 py-4 px-4">
 
-                            {/* Enlaces */}
-                            {/* <Tab.Group as="div"> */}
-
-                                {/* Iniciar sesión / Crear cuenta */}
-                                {/* <div className="flow-root bg-black">
-                                    <a href="#" className="pl-7 py-6 block font-light text-white">
-                                        Iniciar sesión / Crear cuenta
-                                    </a>
-                                </div> */}
-
-                                {/* Categorías */}
-                                {/* <Tab.List className="-mb-px flex">
-                                    {navigation.categories.map((category) => (
-                                        <Tab
-                                            key={category.name}
-                                            className={({ selected }) =>
-                                                classNames(
-                                                    selected ? 'text-black border-black' : 'text-black border-transparent',
-                                                    'flex-1 pb-6 pt-6 border-b-2 font-medium text-xs'
-                                                )
-                                            }
-                                        >
-                                            {category.name}
-                                        </Tab>
-                                    ))}
-                                </Tab.List> */}
-
-                                {/* Secciones */}
-                                {/* <Tab.Panels as={Fragment}>
-                                    {navigation.categories.map((category) => (
-                                        <Tab.Panel key={category.name} className="px-6 py-6 space-y-10">
-                                            {category.sections.map((section) => (
-                                                <div key={section.name}>
-                                                    <p id={`${category.id}-${section.id}-heading-mobile`} className="font-medium text-black uppercase">
-                                                        {section.name}
-                                                    </p>
-                                                    <ul
-                                                        role="list"
-                                                        aria-labelledby={`${category.id}-${section.id}-heading-mobile`}
-                                                        className="grid grid-cols-2 space-y-6 items-baseline"
-                                                    >
-                                                        {section.items.map((item) => (
-                                                            <li key={item.name} className="flow-root">
-                                                                <a href={item.href} className="-m-2 p-2 block text-black">
-                                                                    {item.name}
-                                                                </a>
-                                                            </li>
-                                                        ))}
-                                                    </ul>
-                                                </div>
-                                            ))}
-                                        </Tab.Panel>
-                                    ))}
-                                </Tab.Panels>
-                            </Tab.Group>
+                        {/* Logo */}
+                        <Link to='/' className="block cursor-pointer w-60">
+                            <img src={logo} alt="Logo de la marca Yohji Yamamoto" className="fill-stroke text-gray-900 h-6" />
+                        </Link>
+                        
+                        {/* Enlaces primarios */}
+                        <div className="hidden lg:block">
+                            <ul className="flex items-center space-x-6">
+                                <li>
+                                    <Link to='/' className={(styles.highlight) + " focus:outline-none focus:ring-2 focus:ring-white"}>
+                                        Novedades
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/collection" className={(styles.highlight) + " focus:outline-none focus:ring-2 focus:ring-white"} onMouseEnter={() => setShow1(!show1)}>
+                                        Colección
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/' className={(styles.highlight) + " focus:outline-none focus:ring-2 focus:ring-white"}>
+                                        Esenciales
+                                    </Link>
+                                </li>
+                            </ul>
                         </div>
-                    </Transition.Child>
-                </Dialog>
-            </Transition.Root> */}
 
-            {/* MENÚ PARA DISPOSITIVOS GRANDES */}
-            <header className="relative">
+                        {/* Iconos */}
+                        <div className="flex ml-auto lg:ml-0 items-center justify-end space-x-5 lg:w-60">
 
-                {/* Mensaje destacado */}
-                <p className="bg-black h-10 flex items-center justify-center text-sm font-light text-white px-4 sm:px-6 lg:px-8 uppercase">
-                    Envío gratis para compras superiores a $100.00
-                </p>
-                
-                {/* Navbar */}
-                <nav aria-label="Top" className="mx-auto bg-white grid grid-cols-3 px-6 py-6">
-                    {/* Botón para abrir el menú en dispositivos pequeños*/}
-                    <button
-                        type="button"
-                        className="rounded-md text-black lg:hidden"
-                        onClick={() => setOpen(true)}
-                    >
-                        <span className="sr-only">Abrir menú</span>
-                        <MenuIcon className="h-5 w-5" aria-hidden="true" />
-                    </button>
+                            {/* Usuario */}
+                            <UserCircleIcon className={styles.icon} />
 
-                    <div className="flex flex-row gap-6 items-end">
-                        <span><Link to='/yohji-yamamoto/category/indumentaria'>Indumentaria</Link></span>
-                        <span><Link to='/yohji-yamamoto/category/bolsos'>Bolsos</Link></span>
+                            {/* Wishlist */}
+                            <WishlistWidget></WishlistWidget>
+
+                            {/* Carrito */}
+                            <CartWidget></CartWidget>
+
+                            {/* Toggle */}
+                            <button aria-label="open close menu" onClick={() => setShowMenu(!showMenu)} className="lg:hidden focus:outline-none focus:ring-2 focus:ring-white">
+                                <MenuIcon className={styles.icon} />
+                            </button>
+                        </div>
                     </div>
-                    {/* Container de submenú */}
-                    {/* <Popover.Group className="hidden lg:block z-10">
-                        <div className="h-full flex space-x-8">
-                            {navigation.categories.map((category) => (
-                                <Popover key={category.name} className="flex">
-                                    {({ open }) => (
-                                        <> */}
-                                            {/* Botón de categoría para abrir submenú en dispositivos grandes */}
-                                            {/* <Link to="/yohji-yamamoto/category/bolsos">
-                                            <Popover.Button
-                                                className={classNames(
-                                                    open
-                                                        ? 'border-black text-black'
-                                                        : 'border-transparent text-black',
-                                                    'relative flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 mb-px pt-px'
-                                                )}
-                                            >
-                                                {category.name}
-                                            </Popover.Button>
-                                            </Link>
-                                            
-                                            <Transition
-                                                as={Fragment}
-                                                enter="transition ease-out duration-200"
-                                                enterFrom="opacity-0"
-                                                enterTo="opacity-100"
-                                                leave="transition ease-in duration-150"
-                                                leaveFrom="opacity-100"
-                                                leaveTo="opacity-0"
-                                            > */}
-                                                {/* Submenú con sección e items */}
-                                                {/* <Popover.Panel className="absolute top-full inset-x-0 text-sm text-black">
-                                                    <div className="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true" />
-                                                    <div className="relative bg-white">
-                                                        {category.sections.map((section) => (
-                                                            <div key={section.name} className="flex flex-col px-6">
-                                                                <p id={`${section.name}-heading`} className="font-medium self-center uppercase">
-                                                                    {section.name}
-                                                                </p>
-                                                                <ul
-                                                                    role="list"
-                                                                    aria-labelledby={`${section.name}-heading`}
-                                                                    className="flex flex-row justify-center mb-6 mt-4"
-                                                                >
-                                                                    {section.items.map((item) => (
-                                                                        <li key={item.name} className="mx-3">
-                                                                            <a href={item.href}>
-                                                                                {item.name}
-                                                                            </a>
-                                                                        </li>
-                                                                    ))}
-                                                                </ul>
-                                                            </div>
-                                                        ))}
-                                                    </div>
-                                                </Popover.Panel>
-                                            </Transition>
-                                        </>
-                                    )}
-                                </Popover>
-                            ))}
-                        </div>
-                    </Popover.Group> */}
 
-                    {/* Logo */}
-                    <Link to='/yohji-yamamoto' className="m-auto">
-                        <img
-                            className="aspect-auto h-10 object-contain"
-                            src={logo}
-                            alt="Logo THE SHOP Yohji Yamamoto."
-                        />
-                    </Link>
+                    {/* Enlaces secundarios */}
+                    <ul className={(styles.button) + " flex justify-center py-4 space-x-3 border-b border-gray-200 font-normal " + (show1 ? "block" : "hidden")} onMouseLeave={() => setShow1(!show1)}>
+                        <li><Link to='/category/abrigos'>Abrigos</Link></li>
+                        <li><Link to='/category/blazers'>Blazers</Link></li>
+                        <li><Link to='/category/camisas'>Camisas</Link></li>
+                        <li><Link to='/category/chaquetas'>Chaquetas</Link></li>
+                        <li><Link to='/category/faldas'>Faldas</Link></li>
+                        <li><Link to='/category/jumpsuits'>Jumpsuits</Link></li>
+                        <li><Link to='/category/pantalones'>Pantalones</Link></li>
+                        <li><Link to='/category/remeras'>Remeras</Link></li>
+                        <li><Link to='/category/sweaters'>Sweaters</Link></li>
+                        <li><Link to='/category/vestidos'>Vestidos</Link></li>
+                    </ul>
+                </div>
 
-                    {/* Iconos */}
-                    <div className="flex flex-row items-center justify-end">
+                {/* Dispositivos pequeños */}
+                <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} lg:hidden absolute inset-0 z-10 flex-col w-full mt-14`}>
 
-                        {/* Iniciar sesión / Crear cuenta */}
-                        <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end">
-                            <a href="#">
-                                <UserCircleIcon className="w-5 h-5" aria-hidden="true" />
-                            </a>  
-                        </div>
+                    {/* Enlaces primarios */}
+                    <div className="px-6 bg-white">
+                        <ul className="flex flex-col space-y-4 pb-6">
+                            <li className="border-b border-t border-gray-200 pb-4 px-1 pt-4 mt-4 flex items-center justify-between">
+                                <Link to='/' className={(styles.highlight) + "focus:outline-none focus:ring-2 focus:ring-white border-gray-200 uppercase"}>
+                                    Novedades
+                                </Link>
+                            </li>
+                            <li className="border-b border-gray-200 pb-4 px-1 flex flex-col">
+                                <div className="flex flex-row items-center justify-between">
+                                    <Link to='/collection' className={(styles.highlight) + "focus:outline-none focus:ring-2 focus:ring-white border-gray-200 uppercase"}>
+                                        Colección
+                                    </Link>
+                                    <button aria-label="too" className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white" onClick={() => setShow2(!show2)}>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path className={show2 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#303030" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path d="M4.16602 10H15.8327" stroke="#303030" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
 
-                        {/* Lista de deseos */}
-                        <WishlistWidget></WishlistWidget>
-
-                        {/* Carrito */}
-                        <CartWidget></CartWidget>
+                                {/* Enlaces secundarios */}
+                                <ul className={(styles.button) + " grid grid-cols-3 md:grid-cols-5 items-end mt-2 space-y-2 font-normal " + (show2 ? "block" : "hidden")}>
+                                    <li><Link to='/category/abrigos'>Abrigos</Link></li>
+                                    <li><Link to='/category/blazers'>Blazers</Link></li>
+                                    <li><Link to='/category/camisas'>Camisas</Link></li>
+                                    <li><Link to='/category/chaquetas'>Chaquetas</Link></li>
+                                    <li><Link to='/category/faldas'>Faldas</Link></li>
+                                    <li><Link to='/category/jumpsuits'>Jumpsuits</Link></li>
+                                    <li><Link to='/category/pantalones'>Pantalones</Link></li>
+                                    <li><Link to='/category/remeras'>Remeras</Link></li>
+                                    <li><Link to='/category/sweaters'>Sweaters</Link></li>
+                                    <li><Link to='/category/vestidos'>Vestidos</Link></li>
+                                </ul>
+                            </li>
+                            <li className="border-b border-gray-200 pb-4 px-1 flex items-center justify-between">
+                                <Link to='/' className={(styles.highlight) + "focus:outline-none focus:ring-2 focus:ring-white border-gray-200 uppercase"}>
+                                    Esenciales
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
-            </header>
+                </div>
+            </div>
         </div>
-    )
+    );
 }
 
 export default Navbar

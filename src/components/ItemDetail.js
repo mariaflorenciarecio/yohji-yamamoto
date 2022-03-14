@@ -1,21 +1,113 @@
-import { Link } from "react-router-dom"
+import React, { useState, useContext } from "react"
+import { HeartIcon } from "@heroicons/react/solid"
+import ItemCount from "./ItemCount"
+import { CartContext } from "../context/CartContext"
+import { Link } from "react-router-dom";
 
-const ItemDetail = ({item: filteredItem, item: item}) => {
-  
+
+const ItemDetail = ({ item: filteredItem }) => {
+
+  const [show1, setShow1] = useState(false);
+  const [show2, setShow2] = useState(false);
+
+  const {addItem, clear} = useContext(CartContext)
+  const [isInCart, setIsInCart] = useState(false)
+
+  const addToCart = (quantity) => {
+    addItem(filteredItem, quantity)
+    setIsInCart(true)
+  }
+
+  const styles = {
+    title: "font-medium text-lg text-gray-800 tracking-wider leading-tight uppercase",
+    subtitle: "font-medium text-base text-gray-600 tracking-wider leading-normal uppercase",
+    text: "font-light text-sm text-gray-600 tracking-wide leading-normal",
+    highlight: "font-medium text-xs text-gray-700 tracking-wider leading-loose uppercase",
+    button: "font-medium text-xxs text-gray-700 tracking-wider leading-normal uppercase select-none",
+    symbol: "focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer text-gray-400 border border-gray-400 w-7 h-7 flex items-center justify-center p-0.5",
+    counter: "border border-x-1 border-x-white border-y-gray-400 text-gray-600 h-full text-center w-5 p-0.5"
+  }
+
   return (
-    <>
-      <img src={filteredItem.imageSrc} alt={filteredItem.imageAlt} />
-      <h1>{filteredItem.name}</h1>
-      <p>{filteredItem.price}</p>
-      <p>{filteredItem.brand}</p>
-      <Link to={`/yohji-yamamoto/category/${item.category.toLowerCase()}`}>{filteredItem.category}</Link>
-      <p>{filteredItem.color}</p>
-      <p>Descripción: {filteredItem.details.description}</p>
-      <p>Composición: {filteredItem.details.composition}</p>
-      <p>Cuidado: {filteredItem.details.care}</p>
-      <p>Corte: {filteredItem.details.cut}</p>
-      <p>Tela: {filteredItem.details.fabric}</p>
-    </>
-  )
-}
-export default ItemDetail
+    <div className="selection:bg-gray-600 selection:text-white">
+
+      {/* Breadcrums */}
+      <ul className={"mb-2 ml-10 lowercase hidden lg:flex space-x-2 " + (styles.text)}>
+        <li><Link to='/'>Inicio</Link></li>
+        <li><span>—</span></li>
+        <li><Link to='/collection'>Colección</Link></li>
+        <li><span>—</span></li>
+        <li><Link to={`/category/${filteredItem.category.toLowerCase()}`}>{filteredItem.category}</Link></li>
+        <li><span>—</span></li>
+        <li><span>{filteredItem.name}</span></li>
+      </ul>
+
+      {/* Imágenes y detalles */}
+      <div className="flex flex-col lg:flex-row max-w-full lg:max-w-7xl mx-auto justify-center items-center lg:items-start">
+
+        {/* Imágenes */}
+        <div className="p-6 lg:w-1/2">
+          <img src={filteredItem.images.imgC} alt={filteredItem.name} />
+        </div>
+
+        {/* Detalles */}
+        <div className="p-6 lg:w-1/2">
+
+          {/* Información */}
+          <div className="flex flex-row justify-between items-end">
+            <div>
+              <p className={"mb-1 lowercase " + (styles.text)}>SKU {filteredItem.id} — {filteredItem.color}</p>
+              <h1 className={styles.title}>{filteredItem.name}</h1>
+            </div>
+            <HeartIcon className="h-7 w-7 text-gray-400 hover:text-gray-600 cursor-pointer" />
+          </div>
+          <p className={"mt-4 " + (styles.subtitle)}>{filteredItem.price}</p>
+          <h2 className={"mt-4 " + (styles.highlight)}>Descripción</h2>
+          <p className={"mt-2 " + (styles.text)}>{filteredItem.details.description}</p>
+          <hr className="border-gray-200 w-full mt-4" />
+
+          {/* Detalles del producto */}
+          <div>
+            <div className="flex flex-row justify-between items-center mt-4">
+              <h2 className={styles.highlight}>Detalles del producto</h2>
+              <button aria-label="too" className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white" onClick={() => setShow1(!show1)}>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path className={show1 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#303030" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M4.16602 10H15.8327" stroke="#303030" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <p className={(styles.text) + " mt-2 w-11/12 lowercase " + (show1 ? "block" : "hidden")}>composición: {filteredItem.details.composition} — cuidados: {filteredItem.details.care}</p>
+          </div>
+          <hr className="border-gray-200 w-full mt-4" />
+
+          {/* Beneficios exclusivos */}
+          <div>
+            <div className="flex flex-row justify-between items-center mt-4">
+              <h2 className={styles.highlight}>Beneficios exclusivos</h2>
+              <button aria-label="too" className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white" onClick={() => setShow2(!show2)}>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path className={show2 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#303030" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M4.16602 10H15.8327" stroke="#303030" strokeWidth="" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <p className={(styles.text) + " mt-2 w-11/12 lowercase " + (show2 ? "block" : "hidden")}>Envíos, cambios y devoluciones gratis — 3, 6 y 12 cuotas sin interés — Servicio pick up</p>
+          </div>
+          <hr className="border-gray-200 w-full mt-4" />
+
+          {/* Contador */}
+          { isInCart 
+            ? <div className="flex flex-col space-y-8 mt-6">
+                <Link to='/cart' className={(styles.button) + " focus:outline-none text-white bg-gray-700 focus:ring-transparent w-48 text-center py-3"}>Finalizar compra</Link>
+              </div>
+            : <ItemCount addToCart={addToCart} stock={5} />
+          }
+          <button className={(styles.text) + " p-2.5"} onClick={clear}>"Vaciar carrito" (este botón irá en la página cart)</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ItemDetail;

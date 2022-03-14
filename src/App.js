@@ -10,6 +10,8 @@ import {
   Footer,
 } from './components'
 
+import { CartProvider } from './context/CartContext'
+
 import {  
   CartPage, 
   CheckoutPage, 
@@ -22,19 +24,22 @@ import {
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Sidebar />
-      <Routes>
-        <Route path='/yohji-yamamoto' element={<ItemListPage />} />
-        <Route path='/yohji-yamamoto/category/:categoryId' element={<ItemListPage />} />
-        <Route path='/yohji-yamamoto/item/:itemId' element={<ItemDetailPage />} />
-        <Route path='/yohji-yamamoto/cart' element={<CartPage />} />
-        <Route path='/yohji-yamamoto/checkout' element={<CheckoutPage />} />
-        <Route path='*' element={<ErrorPage />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+        <Navbar />
+        {/* <Sidebar /> */}
+        <Routes>
+          <Route index element={<HomePage />} />
+          <Route path='collection' element={<ItemListPage />} />
+          <Route path='category/:categoryId' element={<ItemListPage />} />
+          <Route path='item/:itemId' element={<ItemDetailPage />} />
+          <Route path='cart' element={<CartPage />} />
+          <Route path='checkout' element={<CheckoutPage />} />
+          <Route path='*' element={<ErrorPage />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </CartProvider>
   )
 }
 
