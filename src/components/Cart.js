@@ -15,7 +15,6 @@ const Cart = () => {
     }
 
     const {cartItems, removeItem, clearCart, cartLenght, getSubtotal, getTotal} = useContext(CartContext)
-    console.log(cartLenght);
 
     return (
         <>
@@ -46,10 +45,10 @@ const Cart = () => {
                                 {cartItems.map((item) => (
                                     <tr key={item.id} className="border-gray-200 border-b">
                                         <th className="flex flex-row justify-left items-center">
-                                            <img className="p-4 h-60" src={item.images.imgA} alt={item.name} />
+                                            <img className="p-4 h-60" src={item.imgA} alt={item.name} />
                                             <div className="flex flex-col text-left">
                                                 <p className={styles.highlight}>{item.name}</p>
-                                                <p className={styles.text}>sku {item.id} — {item.color} — {item.size}</p>
+                                                <p className={styles.text}>{item.color} — {item.size}</p>
                                             </div>
                                         </th>
                                         <th className={styles.text}>{item.price}</th>

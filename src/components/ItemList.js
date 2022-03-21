@@ -1,41 +1,41 @@
 import { useEffect, useState } from 'react'
+import { collection, getDocs, query, where } from "firebase/firestore"
+import { db } from '../firebase/firebaseClient'
+import { useParams } from 'react-router-dom'
 import Item from './Item'
 
-const url = 'https://run.mocky.io/v3/1f43f869-e0fd-446e-a4fe-b54ccb9c7191'
+const ItemList = () => {
 
-const ItemList = ({category: categoryId}) => {
+    const {categoryId} = useParams()
 
     const [items, setItems] = useState([])
 
     useEffect(() => {
+        const getItems = async () => {
+            const myItems = categoryId
+                ? query(collection(db, "items"), where("category", "==", categoryId))
+                : collection(db, "items")
+            const querySnapshot = await getDocs(myItems)
+
+            setItems(
+                querySnapshot.docs.map((item) => {
+                    return { ...item.data(), id: item.id }
+                })
+            )
+        }
+
         getItems()
+
     }, [categoryId])
 
-    const getItems = async () => {
-        try {
-            const response = await fetch(url)
-            const data = await response.json()
-            if (categoryId) {
-                setItems(data.filter(items => items.category.toLowerCase() == categoryId))
-            } else {
-                setItems(data)
-            }
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
-
     return (
-        <>
-            <div className="mx-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 max-w-full lg:max-w-7xl m-auto">
-                    {items.map((item) => (
-                        <Item key={item.id} item={item}></Item>
-                    ))}
-                </div>
+        <div className="mx-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 max-w-full lg:max-w-7xl m-auto">
+                {items.map((item) => (
+                    <Item key={item.id} item={item} category={categoryId}></Item>
+                ))}
             </div>
-        </>
+        </div>
     )
 }
 

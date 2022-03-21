@@ -5,7 +5,7 @@ import { CartContext } from "../context/CartContext"
 import { Link } from "react-router-dom";
 
 
-const ItemDetail = ({ item: filteredItem }) => {
+const ItemDetail = ({ item }) => {
 
   const [show1, setShow1] = useState(false);
   const [show2, setShow2] = useState(false);
@@ -15,7 +15,7 @@ const ItemDetail = ({ item: filteredItem }) => {
   const [isInCart, setIsInCart] = useState(false)
 
   const addToCart = (quantity) => {
-    addItem(filteredItem, quantity)
+    addItem(item, quantity)
     setIsInCart(true)
   }
 
@@ -38,9 +38,9 @@ const ItemDetail = ({ item: filteredItem }) => {
         <li><span>—</span></li>
         <li><Link to='/collection'>Colección</Link></li>
         <li><span>—</span></li>
-        <li><Link to={`/category/${filteredItem.category.toLowerCase()}`}>{filteredItem.category}</Link></li>
+        <li><Link to={`/category/${item.category}`}>{item.category}</Link></li>
         <li><span>—</span></li>
-        <li><span>{filteredItem.name}</span></li>
+        <li><span>{item.name}</span></li>
       </ul>
 
       {/* Imágenes y detalles */}
@@ -48,7 +48,7 @@ const ItemDetail = ({ item: filteredItem }) => {
 
         {/* Imágenes */}
         <div className="p-6 lg:w-1/2 pb-3">
-          <img src={filteredItem.images.imgB} alt={filteredItem.name} />
+          <img src={item.imgB} alt={item.name} />
         </div>
 
         {/* Detalles */}
@@ -57,14 +57,14 @@ const ItemDetail = ({ item: filteredItem }) => {
           {/* Información */}
           <div className="flex flex-row justify-between items-end">
             <div>
-              <p className={"mb-1 lowercase " + (styles.text)}>SKU {filteredItem.id} — {filteredItem.color} — {filteredItem.size}</p>
-              <h1 className={styles.title}>{filteredItem.name}</h1>
+              <p className={"mb-1 lowercase " + (styles.text)}>{item.color} — {item.size}</p>
+              <h1 className={styles.title}>{item.name}</h1>
             </div>
             <HeartIcon className="h-7 w-7 text-gray-400 hover:text-gray-600 cursor-pointer" />
           </div>
-          <p className={"mt-4 " + (styles.subtitle)}>{filteredItem.price}</p>
+          <p className={"mt-4 " + (styles.subtitle)}>{item.price}</p>
           <h2 className={"mt-4 " + (styles.highlight)}>Descripción</h2>
-          <p className={"mt-2 " + (styles.text)}>{filteredItem.details.description}</p>
+          <p className={"mt-2 " + (styles.text)}>{item.description}</p>
           <hr className="border-gray-200 w-full mt-4" />
 
           {/* Detalles del producto */}
@@ -78,7 +78,7 @@ const ItemDetail = ({ item: filteredItem }) => {
                 </svg>
               </button>
             </div>
-            <p className={(styles.text) + " mt-2 w-11/12 lowercase " + (show1 ? "block" : "hidden")}>composición: {filteredItem.details.composition} — cuidados: {filteredItem.details.care}</p>
+            <p className={(styles.text) + " mt-2 w-11/12 lowercase " + (show1 ? "block" : "hidden")}>composición: {item.composition} — cuidados: {item.care}</p>
           </div>
           <hr className="border-gray-200 w-full mt-4" />
 
@@ -103,7 +103,7 @@ const ItemDetail = ({ item: filteredItem }) => {
               <Link to='/cart' className={(styles.button) + " focus:outline-none text-white bg-gray-700 focus:ring-transparent w-48 text-center py-3"}>Finalizar compra</Link>
             </div>
           ) : (
-            <ItemCount addToCart={addToCart} stock={filteredItem.stock} />
+            <ItemCount addToCart={addToCart} stock={item.stock} />
           )}
         </div>
       </div>

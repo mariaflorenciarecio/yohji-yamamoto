@@ -1,7 +1,7 @@
 import { HeartIcon, ShoppingCartIcon, EyeIcon } from '@heroicons/react/solid'
 import { Link } from 'react-router-dom'
 
-const Item = ({item, stock}) => {
+const Item = ({item}) => {
 
     const styles = {
         name: "font-medium text-xs text-gray-700 tracking-wider leading-loose uppercase",
@@ -16,12 +16,12 @@ const Item = ({item, stock}) => {
                 {/* Imagenes */}
                 <div className="w-full aspect-w-5 aspect-h-7 overflow-hidden">
                     <img
-                        src={item.images.imgA}
+                        src={item.imgA}
                         alt={item.name}
                         className="duration-700 group-hover:opacity-0"
                     />
                     <img 
-                        src={item.images.imgD}
+                        src={item.imgD}
                         alt={item.name}
                         className="absolute top-0 z-[-5]" 
                     />

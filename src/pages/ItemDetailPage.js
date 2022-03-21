@@ -1,36 +1,27 @@
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { ItemDetail } from "../components"
+import { getItemsById } from "../firebase/firebaseClient"
 
 const ItemDetailPage = () => {
 
   const {itemId} = useParams()
 
-    const url = 'https://run.mocky.io/v3/1f43f869-e0fd-446e-a4fe-b54ccb9c7191'
+  const [item, setItems] = useState([])
 
-    const [items, setItems] = useState([])
+  useEffect(() => {
 
-    const getItems = async () => {
-        try {
-            const response = await fetch(url)
-            const data = await response.json()
-            setItems(data)
-        } catch (error) {
-            console.log(error);
-        }
-    }
+      getItemsById(itemId).then((data) => {
+          setItems(data)
+      })
 
-    useEffect(() => {
-        getItems()
-    }, [])
+  }, [])
 
-    return (
-        <>
-          {items.filter(item => item.id == itemId).map(filteredItem => (
-            <ItemDetail key={filteredItem.id} item={filteredItem}></ItemDetail>
-          ))}
-        </>
-    )
+  return (
+      <>
+        <ItemDetail key={item.id} item={item}></ItemDetail>
+      </>
+  )
 }
 
 export default ItemDetailPage
