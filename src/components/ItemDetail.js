@@ -10,7 +10,8 @@ const ItemDetail = ({ item: filteredItem }) => {
   const [show1, setShow1] = useState(false);
   const [show2, setShow2] = useState(false);
 
-  const {addItem, clear} = useContext(CartContext)
+  const {addItem} = useContext(CartContext)
+
   const [isInCart, setIsInCart] = useState(false)
 
   const addToCart = (quantity) => {
@@ -21,7 +22,7 @@ const ItemDetail = ({ item: filteredItem }) => {
   const styles = {
     title: "font-medium text-lg text-gray-800 tracking-wider leading-tight uppercase",
     subtitle: "font-medium text-base text-gray-600 tracking-wider leading-normal uppercase",
-    text: "font-light text-sm text-gray-600 tracking-wide leading-normal",
+    text: "font-regular text-sm text-gray-600 tracking-wide leading-normal",
     highlight: "font-medium text-xs text-gray-700 tracking-wider leading-loose uppercase",
     button: "font-medium text-xxs text-gray-700 tracking-wider leading-normal uppercase select-none",
     symbol: "focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer text-gray-400 border border-gray-400 w-7 h-7 flex items-center justify-center p-0.5",
@@ -32,7 +33,7 @@ const ItemDetail = ({ item: filteredItem }) => {
     <div className="selection:bg-gray-600 selection:text-white">
 
       {/* Breadcrums */}
-      <ul className={"mb-2 ml-10 lowercase hidden lg:flex space-x-2 " + (styles.text)}>
+      <ul className={"ml-10 lowercase hidden lg:flex space-x-2 " + (styles.text)}>
         <li><Link to='/'>Inicio</Link></li>
         <li><span>—</span></li>
         <li><Link to='/collection'>Colección</Link></li>
@@ -46,8 +47,8 @@ const ItemDetail = ({ item: filteredItem }) => {
       <div className="flex flex-col lg:flex-row max-w-full lg:max-w-7xl mx-auto justify-center items-center lg:items-start">
 
         {/* Imágenes */}
-        <div className="p-6 lg:w-1/2">
-          <img src={filteredItem.images.imgC} alt={filteredItem.name} />
+        <div className="p-6 lg:w-1/2 pb-3">
+          <img src={filteredItem.images.imgB} alt={filteredItem.name} />
         </div>
 
         {/* Detalles */}
@@ -56,7 +57,7 @@ const ItemDetail = ({ item: filteredItem }) => {
           {/* Información */}
           <div className="flex flex-row justify-between items-end">
             <div>
-              <p className={"mb-1 lowercase " + (styles.text)}>SKU {filteredItem.id} — {filteredItem.color}</p>
+              <p className={"mb-1 lowercase " + (styles.text)}>SKU {filteredItem.id} — {filteredItem.color} — {filteredItem.size}</p>
               <h1 className={styles.title}>{filteredItem.name}</h1>
             </div>
             <HeartIcon className="h-7 w-7 text-gray-400 hover:text-gray-600 cursor-pointer" />
@@ -97,13 +98,13 @@ const ItemDetail = ({ item: filteredItem }) => {
           <hr className="border-gray-200 w-full mt-4" />
 
           {/* Contador */}
-          { isInCart 
-            ? <div className="flex flex-col space-y-8 mt-6">
-                <Link to='/cart' className={(styles.button) + " focus:outline-none text-white bg-gray-700 focus:ring-transparent w-48 text-center py-3"}>Finalizar compra</Link>
-              </div>
-            : <ItemCount addToCart={addToCart} stock={5} />
-          }
-          <button className={(styles.text) + " p-2.5"} onClick={clear}>"Vaciar carrito" (este botón irá en la página cart)</button>
+          { isInCart ? (
+            <div className="flex flex-col space-y-8 mt-6">
+              <Link to='/cart' className={(styles.button) + " focus:outline-none text-white bg-gray-700 focus:ring-transparent w-48 text-center py-3"}>Finalizar compra</Link>
+            </div>
+          ) : (
+            <ItemCount addToCart={addToCart} stock={filteredItem.stock} />
+          )}
         </div>
       </div>
     </div>

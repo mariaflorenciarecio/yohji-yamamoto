@@ -5,7 +5,7 @@ const ItemCount = ({stock, addToCart}) => {
   const [count, setCount] = useState(1)
 
   const styles = {
-    text: "font-light text-sm text-gray-600 tracking-wide leading-normal",
+    text: "font-regular text-sm text-gray-600 tracking-wide leading-normal",
     highlight: "font-medium text-xs text-gray-700 tracking-wider leading-loose uppercase",
     button: "font-medium text-xxs text-gray-700 tracking-wider leading-normal uppercase select-none",
     symbol: "focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer text-gray-400 border border-gray-400 w-7 h-7 flex items-center justify-center p-0.5",
@@ -46,11 +46,11 @@ const ItemCount = ({stock, addToCart}) => {
         </div>
 
         {/* Stock */}
-        <p className={(styles.button) + " lowercase text-gray-700 font-semibold italic"}>Últimas {stock} unidades</p>
+        {/* <p className={(styles.button) + " lowercase text-gray-700 font-semibold italic"}>Últimas {stock} unidades</p> */}
       </div>
 
       {/* Agregar al carrito */}
-      <button className={(styles.button) + " border border-gray-400 focus:outline-none hover:bg-gray-700 hover:text-white focus:ring-transparent p-3 mt-8"} onClick={() => addToCart(count)}>Agregar a mi compra</button>
+      <button className={(styles.button) + " border border-gray-400 focus:outline-none bg-gray-700 text-white focus:ring-transparent p-3 mt-8"} onClick={() => addToCart(count)}>Agregar a mi compra</button>
     </div>
   )
 }

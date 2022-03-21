@@ -29,7 +29,7 @@ function App() {
     <CartProvider>
       <HashRouter>
         <Navbar />
-        <Sidebar />
+        {/* <Sidebar /> */}
         <Routes>
           <Route path='/' element={<ItemListPage />} />
           <Route path='collection' element={<ItemListPage />} />

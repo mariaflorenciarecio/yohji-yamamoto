@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Item from './Item'
 
-const url = 'https://run.mocky.io/v3/b97f915f-b6e0-4388-8955-90ccdb683f07'
+const url = 'https://run.mocky.io/v3/1f43f869-e0fd-446e-a4fe-b54ccb9c7191'
 
 const ItemList = ({category: categoryId}) => {
 

@@ -1,5 +1,5 @@
-import AddToCart from './AddToCart'
-import CartButtons from './CartButtons'
+import Cart from './Cart'
+import Checkout from './Checkout'
 import Contact from './Contact'
 import Error from './Error'
 import FeaturedProducts from './FeaturedProducts'
@@ -16,11 +16,10 @@ import Services from './Services'
 import Sidebar from './Sidebar'
 import Sort from './Sort'
 import Stars from './Stars'
-import StripeCheckout from './StripeCheckout'
 
 export {
-  AddToCart,
-  CartButtons,
+  Cart,
+  Checkout,
   Contact,
   Error,
   FeaturedProducts,
@@ -36,6 +35,5 @@ export {
   Services,
   Sidebar,
   Sort,
-  Stars,
-  StripeCheckout,
+  Stars
 }

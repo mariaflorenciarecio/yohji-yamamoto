@@ -1,6 +1,8 @@
+import { Cart } from "../components"
+
 const CartPage = () => {
   return (
-    <h1>CartPage</h1>
+    <Cart />
   )
 }
 export default CartPage
