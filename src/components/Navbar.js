@@ -13,7 +13,6 @@ function Navbar() {
     const [show2, setShow2] = useState(false)
 
     const styles = {
-        text: "font-light text-sm text-gray-600 tracking-wide leading-normal",
         highlight: "font-medium text-xs text-gray-700 tracking-wider leading-loose uppercase",
         button: "font-medium text-xxs text-gray-700 tracking-wider leading-normal uppercase select-none",
         icon: "w-5 h-5 text-gray-600"

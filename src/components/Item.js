@@ -16,12 +16,12 @@ const Item = ({item}) => {
                 {/* Imagenes */}
                 <div className="w-full aspect-w-5 aspect-h-7 overflow-hidden">
                     <img
-                        src={item.images.imgB}
+                        src={item.imgA}
                         alt={item.name}
                         className="duration-700 group-hover:opacity-0"
                     />
                     <img 
-                        src={item.images.imgE}
+                        src={item.imgD}
                         alt={item.name}
                         className="absolute top-0 z-[-5]" 
                     />
