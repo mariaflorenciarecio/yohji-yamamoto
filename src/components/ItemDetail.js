@@ -36,8 +36,6 @@ const ItemDetail = ({ item }) => {
       <ul className={"ml-10 lowercase hidden lg:flex space-x-2 " + (styles.text)}>
         <li><Link to='/'>Inicio</Link></li>
         <li><span>—</span></li>
-        <li><Link to='/collection'>Colección</Link></li>
-        <li><span>—</span></li>
         <li><Link to={`/category/${item.category}`}>{item.category}</Link></li>
         <li><span>—</span></li>
         <li><span>{item.name}</span></li>
@@ -47,20 +45,28 @@ const ItemDetail = ({ item }) => {
       <div className="flex flex-col lg:flex-row max-w-full lg:max-w-7xl mx-auto justify-center items-center lg:items-start">
 
         {/* Imágenes */}
-        <div className="p-6 lg:w-1/2 pb-3">
-          <img src={item.imgB} alt={item.name} />
-        </div>
+        
+          <div className="group relative lg:w-1/2 overflow-hidden">
+            <img 
+              src={item.imgB} 
+              alt={item.name} 
+              className="duration-700 group-hover:opacity-0 p-6"
+            />
+            <img 
+              src={item.imgC} 
+              alt={item.name} 
+              className="absolute top-0 z-[-5] p-6 pb-3" 
+            />
+          </div>
+        
 
         {/* Detalles */}
         <div className="p-6 lg:w-1/2">
 
           {/* Información */}
-          <div className="flex flex-row justify-between items-end">
-            <div>
-              <p className={"mb-1 lowercase " + (styles.text)}>{item.color} — {item.size}</p>
-              <h1 className={styles.title}>{item.name}</h1>
-            </div>
-            <HeartIcon className="h-7 w-7 text-gray-400 hover:text-gray-600 cursor-pointer" />
+          <div className="flex flex-col justify-between items-start">
+            <p className={"mb-1 lowercase " + (styles.text)}>{item.color} — {item.size}</p>
+            <h1 className={styles.title}>{item.name}</h1>
           </div>
           <p className={"mt-4 " + (styles.subtitle)}>{item.price}</p>
           <h2 className={"mt-4 " + (styles.highlight)}>Descripción</h2>

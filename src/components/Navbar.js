@@ -1,8 +1,7 @@
 import React, { useState } from "react"
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
-import { MenuIcon, UserCircleIcon } from "@heroicons/react/solid"
-import WishlistWidget from "./WishlistWidget"
+import { MenuIcon } from "@heroicons/react/solid"
 import CartWidget from "./CartWidget"
 
 function Navbar() {
@@ -56,12 +55,6 @@ function Navbar() {
 
                         {/* Iconos */}
                         <div className="flex ml-auto lg:ml-0 items-center justify-end space-x-5 lg:w-60">
-
-                            {/* Usuario */}
-                            <UserCircleIcon className={styles.icon} />
-
-                            {/* Wishlist */}
-                            <WishlistWidget></WishlistWidget>
 
                             {/* Carrito */}
                             <CartWidget></CartWidget>

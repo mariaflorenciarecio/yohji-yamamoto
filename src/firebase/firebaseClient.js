@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs, query, where, doc, getDoc } from "firebase/firestore";
+import { getFirestore, collection, getDocs, query, where, doc, getDoc, addDoc } from "firebase/firestore";
 
 // Configuración Firebase
 const firebaseConfig = {
@@ -46,9 +46,16 @@ const getItemsById = async(id) => {
   return docSnap.data()
 }
 
+// 
+const addOrder = async(order) => {
+  const docSnap = await addDoc(collection(db, "orders"), order)
+  return docSnap.id
+}
+
 export {
   db,
   // getItems,
   // getItemsByProp,
-  getItemsById
+  getItemsById,
+  addOrder
 }
