@@ -19,6 +19,9 @@ module.exports = {
       letterSpacing: {
         wider: '0.22em',
         widest: '0.32em'
+      },
+      variants: {
+        fontWeight: ['responsive', 'hover', 'focus', 'active']
       }
     },
   },

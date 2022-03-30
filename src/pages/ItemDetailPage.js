@@ -4,23 +4,25 @@ import { ItemDetail } from "../components"
 import { getItemsById } from "../firebase/firebaseClient"
 
 const ItemDetailPage = () => {
-
   const {itemId} = useParams()
-
   const [item, setItems] = useState([])
+  const [spinner, setSpinner] = useState(false)
 
   useEffect(() => {
-
-      getItemsById(itemId).then((data) => {
-          setItems(data)
-      })
-
+    setSpinner(true)
+    getItemsById(itemId).then((data) => {
+      setItems(data)
+      setSpinner(false)
+    })
   }, [])
 
   return (
-      <>
-        <ItemDetail key={item.id} item={item}></ItemDetail>
-      </>
+    <>
+      {spinner
+        ? (<p>Cargando...</p>)
+        : (<ItemDetail key={item.id} item={item}></ItemDetail>)
+      }
+    </>
   )
 }
 

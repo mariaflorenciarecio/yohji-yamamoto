@@ -1,7 +1,8 @@
 import { HeartIcon, ShoppingCartIcon, EyeIcon } from '@heroicons/react/solid'
 import { Link } from 'react-router-dom'
+import { formatPrice } from '../helpers/formatPrice'
 
-const Item = ({item, addToCart, count}) => {
+const Item = ({item}) => {
 
     const styles = {
         name: "font-medium text-xs text-gray-700 tracking-wider leading-loose uppercase",
@@ -37,7 +38,7 @@ const Item = ({item, addToCart, count}) => {
                     </h3>
                     <p className={styles.price}>
                         <Link to={`/item/${item.id}`}>
-                            {item.price}
+                            {formatPrice(item.price)}
                         </Link>
                     </p>
                 </div>

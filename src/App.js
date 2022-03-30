@@ -13,13 +13,12 @@ import {
 import { CartProvider } from './context/CartContext'
 
 import {  
+  AboutPage,
   CartPage, 
   CheckoutPage, 
   ErrorPage, 
-  HomePage, 
   ItemDetailPage,
-  ItemListPage,
-  PrivateRoute, 
+  ItemListPage
 } from './pages'
 
 // ACLARACION: se utiliza HashRouter en vez de BrowserRouter para el correcto funcionamiento de la app en GitHub Pages
@@ -29,10 +28,9 @@ function App() {
     <CartProvider>
       <HashRouter>
         <Navbar />
-        {/* <Sidebar /> */}
         <Routes>
           <Route path='/' element={<ItemListPage />} />
-          <Route path='collection' element={<ItemListPage />} />
+          <Route path='about' element={<AboutPage />} />
           <Route path='category/:categoryId' element={<ItemListPage />} />
           <Route path='item/:itemId' element={<ItemDetailPage />} />
           <Route path='cart' element={<CartPage />} />

@@ -3,6 +3,7 @@ import { HeartIcon } from "@heroicons/react/solid"
 import ItemCount from "./ItemCount"
 import { CartContext } from "../context/CartContext"
 import { Link } from "react-router-dom";
+import { formatPrice } from "../helpers/formatPrice";
 
 
 const ItemDetail = ({ item }) => {
@@ -34,9 +35,9 @@ const ItemDetail = ({ item }) => {
 
       {/* Breadcrums */}
       <ul className={"ml-10 lowercase hidden lg:flex space-x-2 " + (styles.text)}>
-        <li><Link to='/'>Inicio</Link></li>
+        <li><Link to='/' className="font-bold">Inicio</Link></li>
         <li><span>—</span></li>
-        <li><Link to={`/category/${item.category}`}>{item.category}</Link></li>
+        <li><Link to={`/category/${item.category}`} className="font-bold">{item.category}</Link></li>
         <li><span>—</span></li>
         <li><span>{item.name}</span></li>
       </ul>
@@ -68,7 +69,7 @@ const ItemDetail = ({ item }) => {
             <p className={"mb-1 lowercase " + (styles.text)}>{item.color} — {item.size}</p>
             <h1 className={styles.title}>{item.name}</h1>
           </div>
-          <p className={"mt-4 " + (styles.subtitle)}>{item.price}</p>
+          <p className={"mt-4 " + (styles.subtitle)}>{formatPrice(item.price)}</p>
           <h2 className={"mt-4 " + (styles.highlight)}>Descripción</h2>
           <p className={"mt-2 " + (styles.text)}>{item.description}</p>
           <hr className="border-gray-200 w-full mt-4" />

@@ -2,6 +2,7 @@ import { TrashIcon } from "@heroicons/react/solid";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
+import { formatPrice } from "../helpers/formatPrice";
 import ItemCount from "./ItemCount";
 
 const Cart = () => {
@@ -51,9 +52,9 @@ const Cart = () => {
                                                 <p className={styles.text}>{item.color} — {item.size}</p>
                                             </div>
                                         </th>
-                                        <th className={styles.text}>{item.price}</th>
+                                        <th className={styles.text}>{formatPrice(item.price)}</th>
                                         <th className={styles.text}>{item.quantity}</th>
-                                        <th className={styles.text}>{getSubtotal(item.price, item.quantity)}</th>
+                                        <th className={styles.text}>{formatPrice(getSubtotal(item.price, item.quantity))}</th>
                                         <th className="my-10 pl-4 lg:pl-12  2xl:pl-28 pr-4 2xl:pr-20">
                                             <TrashIcon onClick={() => removeItem(item.id)} className="w-6 h-6 border-transparent focus:border-transparent focus:ring-0 text-gray-400 hover:text-gray-600 cursor-pointer" />
                                         </th>
@@ -64,7 +65,7 @@ const Cart = () => {
                         </table>
                         <div>
                             <p>Cantidad de items: {cartLenght()}</p>
-                            <p>Total: {getTotal()}</p>
+                            <p>Total: {formatPrice(getTotal())}</p>
                             <div className='space-x-4'>
                                 <button onClick={clearCart}>Vaciar carrito</button>
                                 <Link to='/'>Seguir comprando</Link>

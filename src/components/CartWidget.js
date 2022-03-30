@@ -14,7 +14,6 @@ const CartWidget = () => {
                 {cartLenght() > 0 && (
                     <span className="ml-2 text-sm font-medium text-gray-600">{cartLenght()}</span>
                 )}
-                <span className="sr-only">artículos en el carrito, mostrar carrito</span>
             </Link>
         </div>
     )

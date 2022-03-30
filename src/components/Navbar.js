@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import { MenuIcon } from "@heroicons/react/solid"
 import CartWidget from "./CartWidget"
@@ -8,8 +8,8 @@ function Navbar() {
 
     const [showMenu, setShowMenu] = useState(false)
 
-    const [show1, setShow1] = useState(false)
-    const [show2, setShow2] = useState(false)
+    const [showLargeCat, setShowLargeCat] = useState(false)
+    const [showSmallCat, setShowSmallCat] = useState(false)
 
     const styles = {
         highlight: "font-medium text-xs text-gray-700 tracking-wider leading-loose uppercase",
@@ -34,21 +34,21 @@ function Navbar() {
                         
                         {/* Enlaces primarios */}
                         <div className="hidden lg:block">
-                            <ul className="flex items-center space-x-6">
+                            <ul className="flex items-center space-x-7">
                                 <li>
-                                    <Link to='/' className={(styles.highlight) + " focus:outline-none focus:ring-2 focus:ring-white"}>
-                                        Novedades
-                                    </Link>
+                                    <NavLink to='/' className={(styles.highlight) + " focus:outline-none focus:ring-2 focus:ring-white active:font-bold"}>
+                                        Home
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <Link to="/collection" className={(styles.highlight) + " focus:outline-none focus:ring-2 focus:ring-white"} onMouseEnter={() => setShow1(!show1)}>
-                                        Colección
-                                    </Link>
+                                    <button className={(styles.highlight) + " focus:outline-none focus:ring-2 focus:ring-white active:font-bold"} onClick={() => setShowLargeCat(!showLargeCat)}>
+                                        Fall winter 22
+                                    </button>
                                 </li>
                                 <li>
-                                    <Link to='/' className={(styles.highlight) + " focus:outline-none focus:ring-2 focus:ring-white"}>
-                                        Esenciales
-                                    </Link>
+                                    <NavLink to='/about' className={(styles.highlight) + " focus:outline-none focus:ring-2 focus:ring-white active:font-bold"}>
+                                        About
+                                    </NavLink>
                                 </li>
                             </ul>
                         </div>
@@ -66,18 +66,34 @@ function Navbar() {
                         </div>
                     </div>
 
+                    {/* const [categories, setCategories] = useState([]) */}
+
+                    {/* 
+                    const filterItems = (category) => {
+
+                    }
+                    */}
+
+                    {/* 
+                    {categories.map((category) => {
+                        <li><Link to={`/category/${item.category}`}>{item.category}</Link></li>
+                    })
+
+                    }
+                    */}
+
                     {/* Enlaces secundarios */}
-                    <ul className={(styles.button) + " flex justify-center py-4 space-x-3 border-b border-gray-200 font-normal " + (show1 ? "block" : "hidden")} onMouseLeave={() => setShow1(!show1)}>
-                        <li><Link to='/category/abrigos'>Abrigos</Link></li>
-                        <li><Link to='/category/blazers'>Blazers</Link></li>
-                        <li><Link to='/category/camisas'>Camisas</Link></li>
-                        <li><Link to='/category/chaquetas'>Chaquetas</Link></li>
-                        <li><Link to='/category/faldas'>Faldas</Link></li>
-                        <li><Link to='/category/jumpsuits'>Jumpsuits</Link></li>
-                        <li><Link to='/category/pantalones'>Pantalones</Link></li>
-                        <li><Link to='/category/remeras'>Remeras</Link></li>
-                        <li><Link to='/category/sweaters'>Sweaters</Link></li>
-                        <li><Link to='/category/vestidos'>Vestidos</Link></li>
+                    <ul className={(styles.button) + " flex justify-center py-4 space-x-3 border-b border-gray-200 font-normal " + (showLargeCat ? "block" : "hidden")} onMouseLeave={() => setShowLargeCat(!showLargeCat)}>
+                        <li><NavLink to='/category/abrigos' className="active:font-bold">Abrigos</NavLink></li>
+                        <li><NavLink to='/category/blazers' className="active:font-bold">Blazers</NavLink></li>
+                        <li><NavLink to='/category/camisas' className="active:font-bold">Camisas</NavLink></li>
+                        <li><NavLink to='/category/chaquetas' className="active:font-bold">Chaquetas</NavLink></li>
+                        <li><NavLink to='/category/faldas' className="active:font-bold">Faldas</NavLink></li>
+                        <li><NavLink to='/category/jumpsuits' className="active:font-bold">Jumpsuits</NavLink></li>
+                        <li><NavLink to='/category/pantalones' className="active:font-bold">Pantalones</NavLink></li>
+                        <li><NavLink to='/category/remeras' className="active:font-bold">Remeras</NavLink></li>
+                        <li><NavLink to='/category/sweaters' className="active:font-bold">Sweaters</NavLink></li>
+                        <li><NavLink to='/category/vestidos' className="active:font-bold">Vestidos</NavLink></li>
                     </ul>
                 </div>
 
@@ -88,41 +104,41 @@ function Navbar() {
                     <div className="px-6 bg-white">
                         <ul className="flex flex-col space-y-4 pb-6">
                             <li className="border-b border-t border-gray-200 pb-4 px-1 pt-4 mt-4 flex items-center justify-between">
-                                <Link to='/' className={(styles.highlight) + "focus:outline-none focus:ring-2 focus:ring-white border-gray-200 uppercase"}>
-                                    Novedades
-                                </Link>
+                                <NavLink to='/' className={(styles.highlight) + "focus:outline-none focus:ring-2 focus:ring-white border-gray-200 uppercase active:font-bold"}>
+                                    Home
+                                </NavLink>
                             </li>
                             <li className="border-b border-gray-200 pb-4 px-1 flex flex-col">
                                 <div className="flex flex-row items-center justify-between">
-                                    <Link to='/collection' className={(styles.highlight) + "focus:outline-none focus:ring-2 focus:ring-white border-gray-200 uppercase"}>
-                                        Colección
-                                    </Link>
-                                    <button aria-label="too" className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white" onClick={() => setShow2(!show2)}>
+                                    <NavLink to='/collection' className={(styles.highlight) + "focus:outline-none focus:ring-2 focus:ring-white border-gray-200 uppercase active:font-bold"}>
+                                        Fall winter 22
+                                    </NavLink>
+                                    <button aria-label="too" className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white" onClick={() => setShowSmallCat(!showSmallCat)}>
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path className={show2 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#303030" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path className={showSmallCat ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#303030" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
                                             <path d="M4.16602 10H15.8327" stroke="#303030" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
                                     </button>
                                 </div>
 
                                 {/* Enlaces secundarios */}
-                                <ul className={(styles.button) + " grid grid-cols-3 md:grid-cols-5 items-end mt-2 space-y-2 font-normal " + (show2 ? "block" : "hidden")}>
-                                    <li><Link to='/category/abrigos'>Abrigos</Link></li>
-                                    <li><Link to='/category/blazers'>Blazers</Link></li>
-                                    <li><Link to='/category/camisas'>Camisas</Link></li>
-                                    <li><Link to='/category/chaquetas'>Chaquetas</Link></li>
-                                    <li><Link to='/category/faldas'>Faldas</Link></li>
-                                    <li><Link to='/category/jumpsuits'>Jumpsuits</Link></li>
-                                    <li><Link to='/category/pantalones'>Pantalones</Link></li>
-                                    <li><Link to='/category/remeras'>Remeras</Link></li>
-                                    <li><Link to='/category/sweaters'>Sweaters</Link></li>
-                                    <li><Link to='/category/vestidos'>Vestidos</Link></li>
+                                <ul className={(styles.button) + " grid grid-cols-3 md:grid-cols-5 items-end mt-2 space-y-2 font-normal " + (showSmallCat ? "block" : "hidden")}>
+                                    <li><NavLink to='/category/abrigos' className="active:font-bold">Abrigos</NavLink></li>
+                                    <li><NavLink to='/category/blazers' className="active:font-bold">Blazers</NavLink></li>
+                                    <li><NavLink to='/category/camisas' className="active:font-bold">Camisas</NavLink></li>
+                                    <li><NavLink to='/category/chaquetas' className="active:font-bold">Chaquetas</NavLink></li>
+                                    <li><NavLink to='/category/faldas' className="active:font-bold">Faldas</NavLink></li>
+                                    <li><NavLink to='/category/jumpsuits' className="active:font-bold">Jumpsuits</NavLink></li>
+                                    <li><NavLink to='/category/pantalones' className="active:font-bold">Pantalones</NavLink></li>
+                                    <li><NavLink to='/category/remeras' className="active:font-bold">Remeras</NavLink></li>
+                                    <li><NavLink to='/category/sweaters' className="active:font-bold">Sweaters</NavLink></li>
+                                    <li><NavLink to='/category/vestidos' className="active:font-bold">Vestidos</NavLink></li>
                                 </ul>
                             </li>
                             <li className="border-b border-gray-200 pb-4 px-1 flex items-center justify-between">
-                                <Link to='/' className={(styles.highlight) + "focus:outline-none focus:ring-2 focus:ring-white border-gray-200 uppercase"}>
-                                    Esenciales
-                                </Link>
+                                <NavLink to='/about' className={(styles.highlight) + "focus:outline-none focus:ring-2 focus:ring-white border-gray-200 uppercase active:font-bold"}>
+                                    About
+                                </NavLink>
                             </li>
                         </ul>
                     </div>

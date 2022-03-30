@@ -9,7 +9,7 @@ const ItemCount = ({stock, addToCart}) => {
     highlight: "font-medium text-xs text-gray-700 tracking-wider leading-loose uppercase",
     button: "font-medium text-xxs text-gray-700 tracking-wider leading-normal uppercase select-none",
     symbol: "focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer text-gray-400 border border-gray-400 w-7 h-7 flex items-center justify-center p-0.5",
-    counter: "border border-x-1 border-x-white border-y-gray-400 text-gray-600 h-full text-center w-5 p-0.5"
+    counter: "border border-x-1 border-x-white border-y-gray-400 text-gray-600 h-full text-center w-6 p-0.5"
   }
 
   const addCount = () => {
