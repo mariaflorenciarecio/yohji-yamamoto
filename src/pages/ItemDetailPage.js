@@ -1,27 +1,37 @@
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
-import { ItemDetail } from "../components"
+import { ItemDetail, Spinner } from "../components"
 import { getItemsById } from "../firebase/firebaseClient"
 
+// Página de detalles de item
 const ItemDetailPage = () => {
 
-  const {itemId} = useParams()
+    // Use params
+    const { itemId } = useParams()
 
-  const [item, setItems] = useState([])
+    // Use states
+    const [item, setItems] = useState([])
+    const [spinner, setSpinner] = useState(false)
 
-  useEffect(() => {
+    // Obtener información del item
+    useEffect(() => {
+        setSpinner(true)
+        getItemsById(itemId).then((data) => {
+            setItems(data)
+            setSpinner(false)
+        })
+    }, [])
 
-      getItemsById(itemId).then((data) => {
-          setItems(data)
-      })
-
-  }, [])
-
-  return (
-      <>
-        <ItemDetail key={item.id} item={item}></ItemDetail>
-      </>
-  )
+    // Renderizar detalles de item
+    return (
+        <>
+            {/* Mientras carga toda la información del item, mostrar un spinner */}
+            {spinner
+                ? <Spinner />
+                : (<ItemDetail key={item.id} item={item}></ItemDetail>)
+            }
+        </>
+    )
 }
 
 export default ItemDetailPage

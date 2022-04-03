@@ -33,6 +33,9 @@ El trabajo busca transmitir **la simplicidad y la pureza del minimalismo** que s
 * **React**
 * **TailwindCSS**
 
+### Base de datos
+* **Firestore**
+
 ### Gestor de paquetes
 
 * **npm**
@@ -45,3 +48,16 @@ El trabajo busca transmitir **la simplicidad y la pureza del minimalismo** que s
 
 * **LinkedIn:** https://www.linkedin.com/in/mariaflorenciarecio
 * **GitHub:** https://github.com/mariaflorenciarecio
+
+## En el directorio del proyecto se debe ingresar en la consola:
+**npm start**
+
+De esta forma se inicia en forma local y se puede acceder en http://localhost:3000/yohji-yamamoto para verlo en el navegador.
+
+Al realizar cualquier modificación en el código, se hará un reload mostrando los cambios.
+
+## Documentación de React
+
+Acceder a [Create React App Documentation](https://create-react-app.dev/docs/getting-started/)
+
+[React documentation.](https://reactjs.org/)

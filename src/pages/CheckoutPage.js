@@ -1,8 +1,12 @@
 import { Checkout } from '../components'
 
+// Página checkout
 const CheckoutPage = () => {
-  return (
-    <Checkout />
-  )
+    return (
+        <>
+            <Checkout />
+        </>
+    )
 }
+
 export default CheckoutPage

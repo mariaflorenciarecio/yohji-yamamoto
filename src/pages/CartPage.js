@@ -1,8 +1,12 @@
 import { Cart } from "../components"
 
+// Página carrito
 const CartPage = () => {
-  return (
-    <Cart />
-  )
+    return (
+        <>
+            <Cart />
+        </>
+    )
 }
+
 export default CartPage
