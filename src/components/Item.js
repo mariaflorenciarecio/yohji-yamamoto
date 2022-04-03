@@ -1,16 +1,19 @@
-import { HeartIcon, ShoppingCartIcon, EyeIcon } from '@heroicons/react/solid'
 import { Link } from 'react-router-dom'
 import { formatPrice } from '../helpers/formatPrice'
 
+// Item
 const Item = ({item}) => {
 
+    // Estilos de la card
     const styles = {
         name: "font-medium text-xs text-gray-700 tracking-wider leading-loose uppercase",
         price: "font-normal text-xs text-gray-600 tracking-widest leading-loose uppercase"
     }
 
+    // Render de la card
     return (
         <>
+            {/* Contenedor de la card */}
             <div key={item.id} className="group relative overflow-hidden font-body">
 
                 {/* Imagenes */}
@@ -42,9 +45,9 @@ const Item = ({item}) => {
                         </Link>
                     </p>
                 </div>
-
             </div>
         </>
     )
 }
+
 export default Item

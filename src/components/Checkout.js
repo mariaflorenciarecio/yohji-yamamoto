@@ -1,29 +1,29 @@
-import { ArrowLeftIcon } from "@heroicons/react/solid";
-import { addDoc, collection, doc, updateDoc } from "firebase/firestore";
-import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
-import { CartContext } from "../context/CartContext";
-import { addOrder, db } from "../firebase/firebaseClient";
-import { formatPrice } from "../helpers/formatPrice";
+import { ArrowLeftIcon } from "@heroicons/react/solid"
+import { useContext, useState } from "react"
+import { Link } from "react-router-dom"
+import { CartContext } from "../context/CartContext"
+import { addOrder } from "../firebase/firebaseClient"
+import { formatPrice } from "../helpers/formatPrice"
 
+// Checkout
 const Checkout = () => {
 
+    // Estilos del checkout
+    const styles = {
+        title: "font-medium text-lg text-gray-800 tracking-wider leading-tight uppercase",
+        text: "font-light text-sm text-gray-600 tracking-wide leading-normal",
+        highlight: "font-medium text-xs text-gray-700 tracking-wider leading-loose uppercase",
+        button: "font-medium text-xxs text-gray-700 tracking-wider leading-normal uppercase select-none",
+        symbol: "focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer text-gray-400 border border-gray-400 w-7 h-7 flex items-center justify-center p-0.5",
+        counter: "border border-x-1 border-x-white border-y-gray-400 text-gray-600 h-full text-center w-5 p-0.5"
+    }
+
+    // Context del carrito
     const { cartItems, cartLenght, clearCart, getTotal } = useContext(CartContext)
 
+    // Use states que permiten obtener el id de la compra, mostrar un modal final y obtener los datos del cliente
     const [idCompra, setIdCompra] = useState("")
     const [showModal, setShowModal] = useState(false)
-
-    const emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
-    const telephoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{1,6}$/im
-
-    // const handleOpen = () => {
-    //     setOpen(true);
-    // }
-
-    // const handleClose = () => {
-    //     setOpen(false);
-    // }
-
     const [buyer, setBuyer] = useState({
         name: "",
         surname: "",
@@ -32,40 +32,19 @@ const Checkout = () => {
         emailConfirm: "",
     })
 
+    // Expresiones regulares para los campos e-mail y teléfono
+    const emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
+    const telephoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{1,6}$/im
+
+    // Obtener información acerca de la fecha en que se realizó la compra
     const orderDate = new Date().toLocaleDateString()
 
-    // const newOrder = {
-    //     buyer,
-    //     product: cartItems,
-    //     price: getTotal(),
-    //     date: orderDate,
-    // }
-
-    // const handleSubmit = async (e) => {
-    //     try {
-    //         if (buyer.name && buyer.surname && buyer.phone && emailRegex.test(buyer.email)) {
-    //             e.preventDefault()
-
-    //             cartItems.forEach((item) => {
-    //                 const itemRef = doc(db, "items", item.id)
-    //                 updateDoc(itemRef, { stock: item.stock - item.quantity })
-    //                 const orders = collection(db, "orders")
-    //                 addDoc(orders, newOrder).then(({ id }) => {
-    //                     setIdCompra(id)
-    //                 })
-    //                 handleOpen()
-    //             })
-    //         }
-    //     } catch (err) {
-    //         console.error(err)
-    //     }
-    // }
-
+    // Obtener los datos del cliente
     const handleSubmitChange = (e) => {
         setBuyer({ ...buyer, [e.target.name]: e.target.value })
     }
 
-    // user viene de un formulario, products y total del contexto carrito
+    // Generación de la orden, con información del cliente, los items, el precio y la fecha en que se realizó la compra
     function orderHandler() {
         const order = {
             buyer,
@@ -78,129 +57,137 @@ const Checkout = () => {
         })
     }
 
+    // Render del checkout
     return (
-        <div className="overflow-y-hidden">
+        <>
+            {/* Contenedor checkout */}
+            <div className="flex justify-center items-center mx-auto xl:max-w-7xl mx-6 xl:mx-auto">
+                <div className="flex w-full flex-col justify-center items-center">
 
-            <div className="flex justify-center items-center 2xl:container 2xl:mx-auto lg:py-16 md:py-12 py-9 px-4 md:px-6 lg:px-20 xl:px-44 ">
-                <div className="flex w-full sm:w-9/12 lg:w-full flex-col lg:flex-row justify-center items-center lg:space-x-10 2xl:space-x-36 space-y-12 lg:space-y-0">
-                    <div className="flex w-full  flex-col justify-start items-start">
-
-                        <div className>
-                            <p className="text-3xl lg:text-4xl font-semibold leading-7 lg:leading-9 text-gray-800">Checkout</p>
-                        </div>
-
-                        <div className="mt-12">
-                            <p className="text-xl font-semibold leading-5 text-gray-800">Detalles de facturación</p>
-                        </div>
-
-                        <form className="mt-8 flex flex-col justify-start items-start w-full space-y-8 ">
-                            <input
-                                className="px-2 focus:outline-none focus:ring-2 focus:ring-gray-500 border-b border-gray-200 leading-4 text-base placeholder-gray-600 py-4 w-full"
-                                id="name"
-                                type="text"
-                                name="name"
-                                required
-                                onChange={handleSubmitChange}
-                                placeholder="Nombre"
-                            />
-                            <input
-                                className="px-2 focus:outline-none focus:ring-2 focus:ring-gray-500 border-b border-gray-200 leading-4 text-base placeholder-gray-600 py-4 w-full"
-                                id="surname"
-                                type="text"
-                                name="surname"
-                                required
-                                onChange={handleSubmitChange}
-                                placeholder="Apellido"
-                            />
-                            <input
-                                className="focus:outline-none focus:ring-2 focus:ring-gray-500 px-2 border-b border-gray-200 leading-4 text-base placeholder-gray-600 py-4 w-full"
-                                id="telephone"
-                                type="tel"
-                                name="telephone"
-                                required
-                                onChange={handleSubmitChange}
-                                placeholder="Teléfono"
-                            />
-                            <input
-                                className="focus:outline-none focus:ring-2 focus:ring-gray-500 px-2 border-b border-gray-200 leading-4 text-base placeholder-gray-600 py-4 w-full"
-                                id="email"
-                                type="email"
-                                name="email"
-                                required
-                                onChange={handleSubmitChange}
-                                placeholder="E-mail"
-                            />
-                            <input
-                                className="focus:outline-none focus:ring-2 focus:ring-gray-500 px-2 border-b border-gray-200 leading-4 text-base placeholder-gray-600 py-4 w-full"
-                                id="emailConfirm"
-                                type="email"
-                                name="emailConfirm"
-                                required
-                                onChange={handleSubmitChange}
-                                placeholder="Confirmar e-mail"
-                            />
-                        </form>
-
-                        {buyer.name && buyer.surname && buyer.telephone && (buyer.email === buyer.emailConfirm) && telephoneRegex.test(buyer.telephone) && emailRegex.test(buyer.email, buyer.emailConfirm)
-                            ? <input onClick={() => { orderHandler(); setShowModal(true) }} className="focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 mt-8 text-base font-medium focus:ring-2 focus:ring-ocus:ring-gray-800 leading-4 py-4 w-full md:w-4/12 lg:w-full text-white bg-gray-800 cursor-pointer" type="submit" value="Proceder al pago" />
-                            : <input className="focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 mt-8 text-base font-medium focus:ring-2 focus:ring-ocus:ring-gray-800 leading-4 py-4 w-full md:w-4/12 lg:w-full text-white bg-gray-400" type="submit" value="Proceder al pago" disabled />
-                        }
-
-                        <div className="mt-4 flex justify-start items-center w-full">
-                            <Link to='/cart' className="flex flex-row items-center text-base leading-4 lowercase focus:outline-none focus:text-gray-500 hover:text-gray-800 text-gray-600">
-                                <ArrowLeftIcon className="h-4 w-4 mr-1" />Volver al carrito
+                    {/* Título */}
+                    <h1 className={(styles.title) + " self-start mb-6"}>Checkout</h1>
+                    
+                    {/* Información de la compra */}
+                    <div className="flex w-full flex-col lg:flex-row justify-start items-start">
+                        
+                        {/* Resúmen */}
+                        <div className="flex flex-col self-start w-full md:w-1/2 mr-6">
+                            <h2 className={styles.highlight}>Resúmen</h2>
+                            <div className="flex flex-col border border-gray-200 p-4 mt-6">
+                                <div className={"flex flex-row justify-between " + (styles.text)}>
+                                    <p>Cantidad de items:</p>
+                                    <p>{cartLenght()}</p>
+                                </div>
+                                <div className={"flex flex-row justify-between " + (styles.text)}>
+                                    <p>Gastos de envío:</p>
+                                    <p>¡Envío gratis!</p>
+                                </div>
+                                <div className={"flex flex-row justify-between font-semibold mt-10 " + (styles.highlight)}>
+                                    <p>Total:</p>
+                                    <p>{formatPrice(getTotal())}</p>
+                                </div>
+                            </div>
+                            <Link to='/cart' className={(styles.text) + " flex flex-row items-center mt-3 lowercase"}>
+                                <ArrowLeftIcon className="h-4 w-4 mr-1" />
+                                Volver al carrito
                             </Link>
                         </div>
-                    </div>
 
-                    {/* Resumen */}
-                    <div className="flex flex-col justify-start items-start bg-gray-50 w-full p-6 md:p-14">
-                        <div>
-                            <h1 className="text-2xl font-semibold leading-6 text-gray-800">Resumen</h1>
-                        </div>
-                        <div className="flex mt-7 flex-col items-end w-full space-y-6">
-                            {(cartLenght() == 1)
+                        {/* Detalle de facturación */}
+                        <div className="flex flex-col justify-start items-start w-full mt-6 lg:mt-0 mb-3">
+
+                            {/* Formulario */}
+                            <form className="space-y-6">
+                                <h2 className={styles.highlight}>Detalles de facturación</h2>
+                                <input
+                                    className={"px-2 focus:outline-none focus:ring-white focus:border-gray-600 border-b border-gray-200 placeholder-gray-600 py-4 w-full " + (styles.text)}
+                                    id="name"
+                                    type="text"
+                                    name="name"
+                                    required
+                                    onChange={handleSubmitChange}
+                                    placeholder="Nombre"
+                                />
+                                <input
+                                    className={"px-2 focus:outline-none focus:ring-white focus:border-gray-600 border-b border-gray-200 placeholder-gray-600 py-4 w-full " + (styles.text)}
+                                    id="surname"
+                                    type="text"
+                                    name="surname"
+                                    required
+                                    onChange={handleSubmitChange}
+                                    placeholder="Apellido"
+                                />
+                                <input
+                                    className={"px-2 focus:outline-none focus:ring-white focus:border-gray-600 border-b border-gray-200 placeholder-gray-600 py-4 w-full " + (styles.text)}
+                                    id="telephone"
+                                    type="tel"
+                                    name="telephone"
+                                    required
+                                    onChange={handleSubmitChange}
+                                    placeholder="Teléfono (insertar como mínimo 7 dígitos)"
+                                />
+                                <input
+                                    className={"px-2 focus:outline-none focus:ring-white focus:border-gray-600 border-b border-gray-200 placeholder-gray-600 py-4 w-full " + (styles.text)}
+                                    id="email"
+                                    type="email"
+                                    name="email"
+                                    required
+                                    onChange={handleSubmitChange}
+                                    placeholder="E-mail"
+                                />
+                                <input
+                                    className={"px-2 focus:outline-none focus:ring-white focus:border-gray-600 border-b border-gray-200 placeholder-gray-600 py-4 w-full " + (styles.text)}
+                                    id="emailConfirm"
+                                    type="email"
+                                    name="emailConfirm"
+                                    required
+                                    onChange={handleSubmitChange}
+                                    placeholder="Confirmar e-mail"
+                                />
+                            </form>
+
+                            {/* Si se completan todos los inputs correctamente, se habilita el botón para proceder con el pago */}
+                            {buyer.name && buyer.surname && buyer.telephone && (buyer.email === buyer.emailConfirm) && telephoneRegex.test(buyer.telephone) && emailRegex.test(buyer.email, buyer.emailConfirm)
                                 ? (
-                                    <div className="flex justify-between w-full items-center">
-                                        <p className="text-lg leading-4 text-gray-600">Item</p>
-                                        <p className="text-lg font-semibold leading-4 text-gray-600">{cartLenght()} unidad</p>
-                                    </div>
+                                    // Botón habilitado
+                                    <input 
+                                        onClick={() => { orderHandler(); setShowModal(true) }} 
+                                        className={(styles.button) + " focus:outline-none text-white bg-gray-700 focus:ring-transparent w-full text-center py-3 cursor-pointer mt-6"}
+                                        type="submit" 
+                                        value="Proceder al pago" 
+                                    />
                                 ) : (
-                                    <div className="flex justify-between w-full items-center">
-                                        <p className="text-lg leading-4 text-gray-600">Items</p>
-                                        <p className="text-lg font-semibold leading-4 text-gray-600">{cartLenght()} unidades</p>
-                                    </div>
+                                    // Botón deshabilitado
+                                    <input 
+                                    className={(styles.button) + " focus:outline-none text-white bg-gray-400 focus:ring-transparent w-full text-center py-3 mt-6"}
+                                        type="submit" 
+                                        value="Proceder al pago" 
+                                        disabled 
+                                    />
                                 )
                             }
-                            <div className="flex justify-between w-full items-center">
-                                <p className="text-lg leading-4 text-gray-600">Gastos de envío</p>
-                                <p className="text-lg font-semibold leading-4 text-gray-600">¡Envío gratis!</p>
-                            </div>
-                        </div>
-                        <div className="flex justify-between w-full items-center mt-32">
-                            <p className="text-xl font-semibold leading-4 text-gray-800 uppercase">Total</p>
-                            <p className="text-lg font-semibold leading-4 text-gray-800">{formatPrice(getTotal())}</p>
                         </div>
                     </div>
                 </div>
             </div>
 
+            {/* Contenedor modal final */}
             <div className={`${showModal ? "flex" : "hidden"} inset-0 fixed w-full h-full bg-gray-800`}>
-                <div id="modal" className="container mx-auto justify-center items-center px-4 md:px-10 py-20">
+                <div className="container mx-auto justify-center items-center px-4 md:px-10 py-20 place-self-center">
                     <div className="bg-white px-3 md:px-4 py-12 flex flex-col justify-center items-center">
-                        <h1 className="mt-8 md:mt-12 text-3xl lg:text-4xl font-semibold leading-10 text-center text-gray-800 text-center md:w-9/12 lg:w-7/12">¡Muchas gracias por tu compra {(buyer.name).toUpperCase()}!</h1>
-                        <p className="mt-10 text-base leading-normal text-center text-gray-600 md:w-9/12 lg:w-7/12">Te enviamos un mail a {(buyer.email).toLowerCase()} con tu orden de compra ID: {idCompra}. Esperamos que hayas tenido una agradable experiencia en YOHJI YAMAMOTO. ¡Hasta la próxima!</p>
-                        <Link to="/" className="mt-12 md:mt-14 w-full flex justify-center">
-                            <button onClick={clearCart} className="w-full sm:w-auto border border-gray-800 text-base font-medium text-gray-800 py-5 px-14 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-800 hover:text-white">
+                        <h2 className={"text-center md:w-9/12 lg:w-7/12" + (styles.title)}>¡Muchas gracias por tu compra {(buyer.name).toUpperCase()}!</h2>
+                        <p className={"mt-6 text-center md:w-9/12 lg:w-7/12 " + (styles.text)}>Te enviamos un mail a {(buyer.email).toLowerCase()} con tu orden de compra ID: {idCompra}. Esperamos que hayas tenido una agradable experiencia en YOHJI YAMAMOTO. ¡Hasta la próxima!</p>
+                        <Link to="/" className="mt-6 flex justify-center">
+                            <button onClick={clearCart} className={(styles.button) + " focus:outline-none text-white bg-gray-700 focus:ring-transparent w-40 text-center py-3 cursor-pointer"}>
                                 Volver al inicio
                             </button>
                         </Link>
                     </div>
                 </div>
             </div>
-        </div>
 
-    );
+        </>
+    )
 }
 
 export default Checkout
